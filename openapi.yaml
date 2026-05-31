@@ -1,0 +1,126 @@
+openapi: 3.0.3
+info:
+  title: ProcedurePrice API
+  version: 1.0.0
+  description: Core API for calculating medical procedure prices based on SBN and CBHPM catalogs.
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+paths:
+  /api/procedures/search:
+    get:
+      summary: Search for procedures
+      description: Performs a fast text search against SBN procedure names and CBHPM descriptions.
+      operationId: searchProcedures
+      parameters:
+        - name: q
+          in: query
+          required: true
+          description: Search term (e.g., procedure name or code).
+          schema:
+            type: string
+            minLength: 2
+      responses:
+        '200':
+          description: A list of matched procedures.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ProcedureSearchResult'
+        '400':
+          description: Invalid search query.
+
+  /api/calculate:
+    post:
+      summary: Calculate procedure final price
+      description: Calculates the definitive billing price based on the selected code, auxiliaries, and anesthesia necessity.
+      operationId: calculatePrice
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalculateRequest'
+      responses:
+        '200':
+          description: Successful calculation with detailed breakdown.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalculateResponse'
+        '404':
+          description: CBHPM code not found.
+
+components:
+  schemas:
+    ProcedureSearchResult:
+      type: object
+      required:
+        - procedure_name
+        - cbhpm_code
+        - description
+        - porte
+      properties:
+        procedure_name:
+          type: string
+          description: Name of the procedure from the SBN manual.
+        cbhpm_code:
+          type: string
+          description: CBHPM code (e.g., "3.14.03.17-4").
+        description:
+          type: string
+          description: CBHPM description of the procedure.
+        porte:
+          type: string
+          description: Assigned porte (e.g., "13A", "8B").
+
+    CalculateRequest:
+      type: object
+      required:
+        - cbhpm_code
+        - auxiliaries_count
+        - requires_anesthesia
+      properties:
+        cbhpm_code:
+          type: string
+          description: The CBHPM code selected by the user.
+        auxiliaries_count:
+          type: integer
+          minimum: 0
+          maximum: 4
+          description: Number of auxiliary surgeons (0 to 4).
+        requires_anesthesia:
+          type: boolean
+          description: Indicates if an anesthesiologist is required.
+
+    CalculateResponse:
+      type: object
+      required:
+        - base_porte_value
+        - lead_surgeon_fee
+        - auxiliaries_fee
+        - anesthesiologist_fee
+        - final_total
+      properties:
+        base_porte_value:
+          type: number
+          format: float
+          description: Raw value of the code's porte.
+        lead_surgeon_fee:
+          type: number
+          format: float
+          description: Fee for the lead surgeon (100% of base).
+        auxiliaries_fee:
+          type: number
+          format: float
+          description: Total fee for all auxiliaries combined (30% for 1st, 20% for rest).
+        anesthesiologist_fee:
+          type: number
+          format: float
+          description: Fee for the anesthesiologist (if applicable).
+        final_total:
+          type: number
+          format: float
+          description: The definitive total price of the procedure.
