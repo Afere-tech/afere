@@ -1,0 +1,17 @@
+{
+  "name": "ProcedurePrice",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "bradlc.vscode-tailwindcss",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "forwardPorts": [3000, 8080],
+  "postCreateCommand": "cd backend && go mod download"
+}
