@@ -12,6 +12,14 @@ const config: Config = {
         muted: "hsl(var(--muted))",
         "muted-foreground": "hsl(var(--muted-foreground))",
       },
+      fontFamily: {
+        jakarta: ["'Plus Jakarta Sans'", "sans-serif"],
+        grotesk: ["'Space Grotesk'", "sans-serif"],
+      },
+      borderRadius: {
+        "2xl": "1rem",
+        "3xl": "1.5rem",
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,10 @@ export function Input({ className, ...props }: React.InputHTMLAttributes<HTMLInp
   return (
     <input
       className={cn(
-        "h-11 w-full rounded-md border border-border bg-white px-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20",
+        "h-12 w-full rounded-[10px] border border-slate-200 bg-slate-50 px-3.5 text-sm text-slate-950 outline-none transition focus:border-primary focus:bg-white focus:ring-[3px] focus:ring-primary/15",
+        "shadow-[inset_0_1px_3px_rgba(0,0,0,0.06)]",
+        "placeholder:text-slate-400",
+        "disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}
       {...props}

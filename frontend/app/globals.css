@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,5 +22,66 @@ body {
   min-height: 100vh;
   background: hsl(var(--background));
   color: hsl(var(--foreground));
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+}
+
+@layer utilities {
+  .hex-bg {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='64'%3E%3Cpath d='M28 0l28 16v32L28 64 0 48V16z' fill='none' stroke='%230d9488' stroke-opacity='0.045' stroke-width='1'/%3E%3C/svg%3E");
+    background-size: 56px 64px;
+  }
+
+  .nav-pill {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 24px rgba(13, 148, 136, 0.08), 0 1px 4px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-plush {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 12px 40px rgba(0, 0, 0, 0.08),
+      0 2px 8px rgba(13, 148, 136, 0.06);
+  }
+
+  .results-card {
+    background: linear-gradient(160deg, #ffffff 0%, #f0fdfc 60%, #e6faf8 100%);
+    box-shadow: 0 4px 6px rgba(13, 148, 136, 0.04), 0 12px 40px rgba(13, 148, 136, 0.1),
+      0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .badge-clinical {
+    background: linear-gradient(135deg, #f0fdfc, #e6faf8);
+    border: 1px solid rgba(13, 148, 136, 0.2);
+    color: hsl(186, 72%, 24%);
+  }
+
+  .leader {
+    flex: 1;
+    border-bottom: 2px dotted #cbd5e1;
+    margin: 0 6px;
+    margin-bottom: 4px;
+  }
+
+  .btn-calculate {
+    background: linear-gradient(135deg, hsl(186, 72%, 28%), hsl(186, 72%, 22%));
+    box-shadow: 0 4px 20px hsla(186, 72%, 28%, 0.35);
+    transition: box-shadow 0.2s, transform 0.15s;
+  }
+  .btn-calculate:hover:not(:disabled) {
+    box-shadow: 0 0 0 3px hsla(186, 72%, 28%, 0.2), 0 6px 24px hsla(186, 72%, 28%, 0.4);
+    transform: translateY(-1px);
+  }
+  .btn-calculate:disabled {
+    background: repeating-linear-gradient(
+      -45deg,
+      #e2e8f0,
+      #e2e8f0 6px,
+      #f1f5f9 6px,
+      #f1f5f9 12px
+    );
+    box-shadow: none;
+    color: #94a3b8;
+    cursor: not-allowed;
+  }
 }

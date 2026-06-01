@@ -1,10 +1,18 @@
 "use client";
 
-import { Calculator } from "lucide-react";
+import {
+  Activity,
+  Calculator,
+  HeartPulse,
+  Info,
+  ShieldCheck,
+  Stethoscope,
+} from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Autocomplete, type ProcedureOption } from "@/components/ui/autocomplete";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Toggle } from "@/components/ui/toggle";
 
 type Calculation = {
   base_porte_value: number;
@@ -27,7 +35,6 @@ export default function Home() {
   const [requiresAnesthesia, setRequiresAnesthesia] = useState(true);
   const [calculation, setCalculation] = useState<Calculation | null>(null);
 
-  // Sync porte with selected procedure
   useEffect(() => {
     setPorte(selectedProcedure?.porte ?? "");
   }, [selectedProcedure]);
@@ -35,9 +42,7 @@ export default function Home() {
   const canCalculate = useMemo(() => selectedProcedure !== null, [selectedProcedure]);
 
   async function calculate() {
-    if (!selectedProcedure) {
-      return;
-    }
+    if (!selectedProcedure) return;
 
     const response = await fetch("/api/calculate", {
       method: "POST",
@@ -67,75 +72,220 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col">
-      <section className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-5 py-8">
-        <div className="flex items-center justify-between gap-4 border-b border-border pb-5">
-          <div>
-            <h1 className="text-2xl font-semibold tracking-normal">ProcediPriz</h1>
-            <p className="mt-1 text-sm text-muted-foreground">Cálculo rápido de honorários neurocirúrgicos</p>
-          </div>
-          <div className="flex size-11 items-center justify-center rounded-md bg-primary text-white">
-            <Calculator aria-hidden="true" size={22} />
-          </div>
-        </div>
+    <main className="hex-bg relative min-h-screen" style={{ backgroundColor: "hsl(var(--background))" }}>
+      {/* Ambient teal glow */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-0 h-[300px] w-[700px] -translate-x-1/2"
+        style={{
+          background: "radial-gradient(ellipse at center, hsla(186,72%,60%,0.12) 0%, transparent 70%)",
+        }}
+      />
 
-        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <section className="space-y-5">
+      {/* Floating nav */}
+      <div className="relative z-10 px-5 pt-4">
+        <nav
+          className="nav-pill mx-auto flex max-w-[1080px] items-center justify-between rounded-full px-5 py-2.5"
+        >
+          <div className="flex items-center gap-2.5">
+            <div
+              className="flex h-9 w-9 items-center justify-center rounded-full"
+              style={{
+                background: "linear-gradient(135deg, hsl(186,72%,28%), hsl(186,72%,22%))",
+                boxShadow: "0 2px 8px hsla(186,72%,28%,0.35)",
+              }}
+            >
+              <Activity aria-hidden="true" className="text-white" size={18} />
+            </div>
+            <div>
+              <span className="block text-base font-extrabold tracking-tight text-slate-950">
+                ProcediPriz
+              </span>
+              <span className="block text-[10px] font-medium tracking-[0.3px] text-slate-500 leading-none">
+                NEUROCIRURGIA
+              </span>
+            </div>
+          </div>
+          <div className="badge-clinical flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-semibold">
+            <ShieldCheck aria-hidden="true" size={14} />
+            Portal Clínico
+          </div>
+        </nav>
+      </div>
+
+      {/* Hero */}
+      <div className="relative z-[1] px-5 pb-6 pt-8 text-center">
+        <h1 className="m-0 mb-1.5 text-[30px] font-extrabold tracking-tight text-slate-950">
+          Cálculo de Honorários
+        </h1>
+        <p className="m-0 text-sm font-medium text-slate-500">
+          Baseado na tabela CBHPM · Resultados instantâneos
+        </p>
+      </div>
+
+      {/* Main grid */}
+      <div
+        className="relative z-[1] mx-auto grid max-w-[1080px] gap-7 px-5 pb-12"
+        style={{ gridTemplateColumns: "1.2fr 0.8fr" }}
+      >
+        {/* Left panel */}
+        <div
+          className="card-plush rounded-3xl border border-slate-200/80 bg-white p-8"
+        >
+          <div className="mb-6 flex items-center gap-2">
+            <Stethoscope aria-hidden="true" size={18} style={{ color: "hsl(186,72%,28%)" }} />
+            <h2 className="m-0 text-[15px] font-bold text-slate-950">
+              Configuração do Procedimento
+            </h2>
+          </div>
+
+          {/* Search */}
+          <div className="mb-5">
             <Autocomplete
-              label="Buscar procedimento"
+              label="Buscar Procedimento"
               options={procedureOptions}
               value={selectedProcedure}
               onChange={setSelectedProcedure}
               onSearch={searchProcedures}
             />
+          </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="space-y-2">
-                <span className="text-sm font-medium">Porte do procedimento</span>
-                <Input value={porte} onChange={(event) => setPorte(event.target.value)} />
+          {/* Porte + Auxiliaries */}
+          <div className="mb-5 grid gap-3.5 sm:grid-cols-2">
+            <div>
+              <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500">
+                Porte do Procedimento
               </label>
-
-              <label className="space-y-2">
-                <span className="text-sm font-medium">Número de auxiliares</span>
-                <Input
-                  min={0}
-                  max={4}
-                  type="number"
-                  value={auxiliariesCount}
-                  onChange={(event) => setAuxiliariesCount(Number(event.target.value))}
-                />
-              </label>
+              <Input value={porte} onChange={(e) => setPorte(e.target.value)} />
             </div>
-
-            <label className="flex items-center justify-between gap-4 rounded-md border border-border bg-white px-4 py-3">
-              <span className="text-sm font-medium">Necessita de anestesiologista</span>
-              <input
-                checked={requiresAnesthesia}
-                className="size-5 accent-teal-700"
-                type="checkbox"
-                onChange={(event) => setRequiresAnesthesia(event.target.checked)}
+            <div>
+              <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500">
+                Número de Auxiliares
+              </label>
+              <Input
+                min={0}
+                max={4}
+                type="number"
+                value={auxiliariesCount}
+                onChange={(e) => setAuxiliariesCount(Number(e.target.value))}
               />
-            </label>
+            </div>
+          </div>
 
-            <Button disabled={!canCalculate} onClick={calculate}>
-              Calcular
-            </Button>
-          </section>
-
-          <section className="rounded-md border border-border bg-white p-5">
-            <h2 className="text-lg font-semibold">Resultado</h2>
-            <dl className="mt-5 space-y-3 text-sm">
-              <ResultRow label="Cirurgião principal" value={calculation?.lead_surgeon_fee} />
-              <ResultRow label="Auxiliares" value={calculation?.auxiliaries_fee} />
-              <ResultRow label="Anestesiologista" value={calculation?.anesthesiologist_fee} />
-              <div className="border-t border-border pt-4">
-                <ResultRow strong label="Total final" value={calculation?.final_total} />
+          {/* Anesthesiologist toggle */}
+          <div
+            className="mb-6 flex items-center justify-between gap-4 rounded-2xl border px-4 py-4"
+            style={{
+              borderColor: "rgba(13,148,136,0.25)",
+              background: "linear-gradient(135deg, #f0fdfc, #e6faf8)",
+            }}
+          >
+            <div className="flex items-center gap-2.5">
+              <div
+                className="flex h-8 w-8 items-center justify-center rounded-full"
+                style={{ background: "rgba(13,148,136,0.12)" }}
+              >
+                <HeartPulse aria-hidden="true" size={16} style={{ color: "hsl(186,72%,28%)" }} />
               </div>
-            </dl>
-          </section>
+              <div>
+                <div className="text-[13px] font-semibold text-slate-950">Anestesiologista</div>
+                <div className="text-[11px] text-slate-500">Incluir honorários do anestesista</div>
+              </div>
+            </div>
+            <Toggle checked={requiresAnesthesia} onChange={setRequiresAnesthesia} />
+          </div>
+
+          {/* Calculate button */}
+          <Button disabled={!canCalculate} onClick={calculate}>
+            <Calculator aria-hidden="true" size={18} />
+            Calcular Honorários
+          </Button>
         </div>
-      </section>
-      <footer className="border-t border-border px-5 py-4 text-center text-sm text-muted-foreground">2026  LabF5  Todos os direitos reservados</footer>
+
+        {/* Right panel – results */}
+        <div className="results-card relative overflow-hidden rounded-3xl border p-7" style={{ borderColor: "rgba(13,148,136,0.15)" }}>
+          {/* Decorative glow orb */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-10 -top-10 h-[120px] w-[120px] rounded-full"
+            style={{
+              background: "radial-gradient(circle, hsla(186,72%,50%,0.15), transparent 70%)",
+            }}
+          />
+
+          <div className="mb-6 flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Calculator aria-hidden="true" size={18} style={{ color: "hsl(186,72%,28%)" }} />
+              <h2 className="m-0 text-[15px] font-bold text-slate-950">Resultado</h2>
+            </div>
+            <span
+              className="rounded-full px-2.5 py-1 text-[11px] font-semibold"
+              style={{ background: "rgba(13,148,136,0.1)", color: "hsl(186,72%,26%)" }}
+            >
+              CBHPM 2025
+            </span>
+          </div>
+
+          {/* Line items */}
+          <dl className="space-y-3.5">
+            <ResultRow label="Cirurgião principal" value={calculation?.lead_surgeon_fee} />
+            <ResultRow
+              label={`Auxiliares${auxiliariesCount > 1 ? ` (×${auxiliariesCount})` : ""}`}
+              value={calculation?.auxiliaries_fee}
+            />
+            <ResultRow label="Anestesiologista" value={calculation?.anesthesiologist_fee} />
+          </dl>
+
+          {/* Dashed divider */}
+          <div
+            className="my-5"
+            style={{ borderTop: "2px dashed rgba(13,148,136,0.3)" }}
+          />
+
+          {/* Total block */}
+          <div
+            className="rounded-2xl p-4 text-white"
+            style={{
+              background: "linear-gradient(135deg, hsl(186,72%,28%), hsl(186,68%,22%))",
+              boxShadow: "0 4px 20px hsla(186,72%,28%,0.35)",
+            }}
+          >
+            <div className="mb-1.5 text-xs font-semibold uppercase tracking-[0.5px] opacity-75">
+              Total Final
+            </div>
+            <div className="font-grotesk text-[36px] font-bold leading-none tracking-tight">
+              {calculation ? money.format(calculation.final_total) : "—"}
+            </div>
+            {selectedProcedure && (
+              <div className="mt-1.5 text-[11px] font-medium opacity-65">
+                {selectedProcedure.procedure_name}
+                {porte ? ` · Porte ${porte}` : ""}
+              </div>
+            )}
+          </div>
+
+          {/* Disclaimer */}
+          <div className="mt-4 flex items-start gap-2 rounded-xl border border-slate-200 bg-slate-50/80 p-3">
+            <Info aria-hidden="true" className="mt-px shrink-0 text-slate-400" size={15} />
+            <p className="m-0 text-[11px] font-medium leading-relaxed text-slate-400">
+              Valores calculados conforme Tabela CBHPM 2025/2026. Sujeito à variação por convênio.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="relative px-5 pb-5 text-center">
+        <div
+          className="mb-3.5 h-px"
+          style={{ background: "linear-gradient(90deg, transparent, #cbd5e1, transparent)" }}
+        />
+        <p className="m-0 text-xs font-medium text-slate-400">
+          2026 &nbsp;·&nbsp;{" "}
+          <span className="font-bold text-slate-500">LabF5</span>
+          &nbsp;·&nbsp; Todos os direitos reservados
+        </p>
+      </footer>
     </main>
   );
 }
@@ -143,16 +293,17 @@ export default function Home() {
 function ResultRow({
   label,
   value,
-  strong = false,
 }: {
   label: string;
   value: number | undefined;
-  strong?: boolean;
 }) {
   return (
-    <div className="flex items-center justify-between gap-4">
-      <dt className={strong ? "font-semibold" : "text-muted-foreground"}>{label}</dt>
-      <dd className={strong ? "text-xl font-semibold" : "font-medium"}>{value === undefined ? "-" : money.format(value)}</dd>
+    <div className="flex items-end justify-between gap-1">
+      <dt className="shrink-0 text-[13px] font-medium text-slate-500">{label}</dt>
+      <div className="leader" />
+      <dd className="font-grotesk shrink-0 text-sm font-semibold text-slate-950">
+        {value === undefined ? "—" : money.format(value)}
+      </dd>
     </div>
   );
 }
