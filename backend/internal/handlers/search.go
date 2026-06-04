@@ -16,8 +16,15 @@ var catalogFS embed.FS
 var procedures = loadProcedures()
 
 func RegisterRoutes(mux *http.ServeMux) {
+	mux.HandleFunc("/api/health", withCORS(health))
 	mux.HandleFunc("/api/procedures/search", withCORS(searchProcedures))
 	mux.HandleFunc("/api/calculate", withCORS(calculatePrice))
+}
+
+func health(w http.ResponseWriter, r *http.Request) {
+	respondJSON(w, http.StatusOK, map[string]string{
+		"status": "ok",
+	})
 }
 
 func searchProcedures(w http.ResponseWriter, r *http.Request) {

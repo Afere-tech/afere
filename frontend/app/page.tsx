@@ -44,6 +44,10 @@ export default function Home() {
   }, [selectedProcedure]);
 
   useEffect(() => {
+    fetch("/api/health").catch(() => {});
+  }, []);
+
+  useEffect(() => {
     if (searchQuery.trim().length < 2) {
       setProcedureOptions([]);
       return;
