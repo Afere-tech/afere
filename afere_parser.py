@@ -73,6 +73,9 @@ def smart_join_name_parts(parts: list[str]) -> str:
           (complete word + new lowercase word, e.g. the conjunction "ou").
       2.  Last word ends in a consonant → no space
           (classic fragment: "VENTRÍCUL", "CEREBR", "SISTEM").
+          Exception: short words (< 4 chars) that contain a vowel are likely
+          complete Portuguese words (e.g. "DOR", "POR") and fall through to Rule 3.
+          Single consonants ("C") have no vowel and still fire Rule 2.
       3.  Last word <= 6 chars AND next first word <= 4 chars → no space
           (short fragment + short completion: "CO"+"LUNA", "CRÂ"+"NIO").
           Last word <= 6 chars AND next first word > 4 chars → SPACE
@@ -81,11 +84,21 @@ def smart_join_name_parts(parts: list[str]) -> str:
           (I, II, III, IV, V…) → always SPACE (procedure variant number).
       4.  Next part opens with <= 7 uppercase chars + space/punct/EOS → no space
           (longer completions: "NOIDAL", "DEIRO", "TILHO", "GATILHO"[:partial]).
+          Exception: common Portuguese prepositions/articles ("DE", "DA", …) that
+          open a new phrase rather than completing the previous word.
       5.  Default → SPACE.
     """
     _ROMAN = re.compile(r"^[IVX]{1,5}([\s:;,.(]|$)")
     _UPP7  = re.compile(r"^([A-ZÀ-ÿ]{1,7})([\s:;,.(]|$)")
     _FIRST = re.compile(r"^([A-Za-zÀ-ÿ]+)")
+    # Common Portuguese prepositions/articles that start a new syntactic phrase,
+    # not a word-completion fragment (used to guard Rule 4).
+    _PREPOSITIONS = frozenset({
+        "DE", "DA", "DO", "DAS", "DOS",
+        "E", "OU",
+        "NO", "NA", "NOS", "NAS",
+        "EM", "SEM", "SOB", "POR", "COM",
+    })
 
     if not parts:
         return ""
@@ -113,8 +126,14 @@ def smart_join_name_parts(parts: list[str]) -> str:
                 result = result + " " + part  # complete word + new lowercase word
             continue
 
-        # Rule 2: consonant-ending fragment
-        if last_word and last_word[-1] not in _VOWELS:
+        # Rule 2: consonant-ending fragment → no space.
+        # Guard: exactly 3-char words that contain a vowel are likely complete
+        # Portuguese words ("DOR", "POR") not fragments; let Rule 3 decide.
+        # 1-2 char consonant-ending tokens ("C", "EX", "IN") are always fragments.
+        _is_3char_complete_word = (
+            len(last_word) == 3 and any(c in _VOWELS for c in last_word)
+        )
+        if last_word and last_word[-1] not in _VOWELS and not _is_3char_complete_word:
             result = result + part
             continue
 
@@ -136,8 +155,10 @@ def smart_join_name_parts(parts: list[str]) -> str:
             result = result + " " + part
             continue
 
-        # Rule 4: next opens with a short uppercase word (<= 7 chars + terminator)
-        if _UPP7.match(part):
+        # Rule 4: next opens with a short uppercase word (<= 7 chars + terminator) → no space.
+        # Skip if that word is a common preposition/article starting a new phrase.
+        m7 = _UPP7.match(part)
+        if m7 and m7.group(1) not in _PREPOSITIONS:
             result = result + part
             continue
 
@@ -191,9 +212,15 @@ def fix_intraword_spaces(name: str) -> str:
     from real two-word pairs without a Portuguese dictionary.
     """
     # Hardcoded fixes for splits indistinguishable without a Portuguese dictionary
-    name = name.replace("ESTERE OTAXIA", "ESTEREOTAXIA")   # vowel+vowel
-    name = name.replace("BRA QUIAL", "BRAQUIAL")            # vowel+QU fragment
-    name = name.replace("Neuroc rítico", "Neurocrítico")    # consonant+lowercase (intra-cell)
+    name = name.replace("ESTERE OTAXIA", "ESTEREOTAXIA")        # vowel+vowel
+    name = name.replace("BRA QUIAL", "BRAQUIAL")                # vowel+QU fragment
+    name = name.replace("Neuroc rítico", "Neurocrítico")        # consonant+lowercase (intra-cell)
+    name = name.replace("Autorregu lação", "Autorregulação")    # Rule 1 fires on long vowel-end word
+    # Fix truncated "INTRACRANIAN" suffix: only when not already followed by a letter
+    name = re.sub(r"INTRACRANIAN(?=[^A-Za-zÀ-ÿ]|$)", "INTRACRANIANO", name)
+    name = name.replace("DORCRÔNICA", "DOR CRÔNICA")                       # Rule 2 fires on 3-char complete word
+    name = name.replace("Laminectomi)", "Laminectomia)")        # truncated parenthetical
+    name = name.replace("percutânea assisti)", "percutânea assistida)")      # truncated parenthetical
 
     # Fix spurious space after opening parenthesis: "( USNO)" → "(USNO)"
     name = RE_PAREN_SPACE.sub("(", name)
@@ -262,22 +289,70 @@ def parse_sbn_pdf(pdf_path: str, debug: bool = False) -> list[dict]:
                     c0 = cell0(row)
 
                     # ── Procedure name row ────────────────────────────────────
-                    # Pattern: col0="Nome", col1="Procedimento", name in cols 2+
-                    if c0 == "Nome" and len(row) > 2:
-                        col1 = str(row[1]).strip() if row[1] else ""
-                        if "Procedimento" in col1 or col1 == "":
-                            # Join all non-None cells from col 2 onwards
-                            name_parts = [
-                                str(c).strip() for c in row[2:] if c is not None and str(c).strip()
+                    # Normal:  col0="Nome",   col1="Procedimento", name in cols 2+
+                    # Split:   col0="Nome P", col1="rocedimento",  name in cols 2+
+                    # Detection: concatenate col0+col1 (stripped, lowercased, no spaces)
+                    # and check it starts with "nomeprocedimento".
+                    if len(row) > 2:
+                        col1_raw = str(row[1]).strip() if row[1] else ""
+                        nome_tag = (
+                            c0.lower().replace(" ", "")
+                            + col1_raw.lower().replace(" ", "")
+                        )
+                        if nome_tag.startswith("nomeprocedimento"):
+                            # Each PDF cell may contain multiple lines (\n) because
+                            # pdfplumber concatenates text rows within a column.
+                            # Use only line 0 of each cell for the main name;
+                            # collect line 1+ as extra content to append after.
+                            raw_cells = [
+                                str(c).strip()
+                                for c in row[2:]
+                                if c is not None and str(c).strip()
                             ]
-                            raw_name = smart_join_name_parts(name_parts)
+                            cell_lines = [
+                                [l.strip() for l in c.split('\n') if l.strip()]
+                                for c in raw_cells
+                            ]
+                            main_parts = [lines[0] for lines in cell_lines if lines]
+                            extra_lines = [l for lines in cell_lines for l in lines[1:]]
+
+                            raw_name = smart_join_name_parts(main_parts)
                             name = clean_proc_name(raw_name)
+
+                            # Append extra lines from cell line 1+
+                            for extra in extra_lines:
+                                if extra.startswith('('):
+                                    # Parenthetical qualifier — append and close if truncated
+                                    if not extra.endswith(')'):
+                                        extra += ')'
+                                    name = (name + ' ' + extra).strip()
+                                else:
+                                    # Suffix or paren continuation — append directly
+                                    sep = '' if name.endswith('-') or name.endswith('–') else ' '
+                                    name = (name + sep + extra).strip()
+
+                            # Balance parentheses: close unclosed '(' or strip orphan ')'
+                            open_count = name.count('(') - name.count(')')
+                            if open_count > 0:
+                                name = name + ')' * open_count
+                            elif open_count < 0:
+                                for _ in range(-open_count):
+                                    idx = name.rfind(')')
+                                    if idx >= 0:
+                                        name = (name[:idx] + name[idx + 1:]).strip()
+
+                            # Fix known column-truncated words (parentheticals and plain suffixes)
+                            name = name.replace("Laminectomi)", "Laminectomia)")
+                            name = name.replace("percutânea assisti)", "percutânea assistida)")
+                            name = name.replace("percutânea de rizo)", "percutânea de rizotomia)")
+                            name = re.sub(r"INTRACRANIAN(?=[^A-Za-zÀ-ÿ]|$)", "INTRACRANIANO", name)
+
                             if name:
                                 current_proc = name
                                 in_cbhpm = False
                                 if debug:
                                     print(f"[p{page_num}] PROC: {current_proc}")
-                        continue
+                            continue
 
                     # ── CBHPM section header ──────────────────────────────────
                     if "Códigos CBHPM" in c0 or "Codigos CBHPM" in c0:

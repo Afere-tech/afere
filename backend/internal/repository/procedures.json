@@ -114,31 +114,31 @@
     "porte": "3B"
   },
   {
-    "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
+    "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
     "porte": "2B"
   },
   {
-    "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
+    "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
     "porte": "3C"
   },
   {
-    "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
+    "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
     "porte": "1C"
   },
   {
-    "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
+    "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
     "porte": "1B"
   },
   {
-    "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
+    "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
     "porte": "2B"
@@ -180,25 +180,61 @@
     "porte": "3B"
   },
   {
-    "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
+    "cbhpm_code": "1.01.01.03-9",
+    "description": "Consulta em pronto-socorro",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
+    "cbhpm_code": "3.07.15.23-7",
+    "description": "Outras afecções da coluna – tratamento incruento",
+    "porte": "3B"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
     "cbhpm_code": "2.01.03.30-1",
     "description": "Infiltração de ponto-gatilho (por região muscular)",
     "porte": "3A"
   },
   {
-    "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
+    "cbhpm_code": "1.01.01.03-9",
+    "description": "Consulta em pronto-socorro",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "3.07.15.34-2",
     "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
     "porte": "3C"
   },
   {
-    "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "3.07.15.15-6",
     "description": "Fratura e/ou luxação da coluna vertebral – redução incruenta",
     "porte": "5B"
   },
   {
-    "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
+    "cbhpm_code": "3.07.15.23-7",
+    "description": "Outras afecções da coluna – tratamento incruento",
+    "porte": "3B"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
+    "cbhpm_code": "1.01.01.03-9",
+    "description": "Consulta em pronto-socorro",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
+    "cbhpm_code": "3.07.15.34-2",
+    "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
+    "porte": "3C"
+  },
+  {
+    "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
     "cbhpm_code": "3.07.15.29-6",
     "description": "Tração cervical trans-esquelética",
     "porte": "8B"
@@ -246,10 +282,34 @@
     "porte": "2B"
   },
   {
-    "procedure_name": "VISITA HOSPITALAR DE PÓS-OPERATÓRIO",
+    "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
+    "cbhpm_code": "1.01.02.01-9",
+    "description": "Visita hospitalar a paciente internado",
+    "porte": "2A"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
+    "cbhpm_code": "4.13.01.07-2",
+    "description": "Campimetria manual - monocular",
+    "porte": "1C"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
+    "cbhpm_code": "4.13.01.20-0",
+    "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
+    "porte": "1B"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
     "porte": "3C"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
+    "cbhpm_code": "3.07.15.25-3",
+    "description": "Punção Liquórica",
+    "porte": "2B"
   },
   {
     "procedure_name": "VISITA HOSPITALAR - CRÂNIO II (TCE + Fratura de crânio)",
@@ -282,13 +342,25 @@
     "porte": "3B"
   },
   {
-    "procedure_name": "VISITA HOSPITALAR - COLUNA I (Patologias Não Traumáticas)",
+    "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
+    "cbhpm_code": "1.01.02.01-9",
+    "description": "Visita hospitalar a paciente internado",
+    "porte": "2A"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
+    "cbhpm_code": "3.07.15.23-7",
+    "description": "Outras afecções da coluna – tratamento incruento",
+    "porte": "3B"
+  },
+  {
+    "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "2.01.03.30-1",
     "description": "Infiltração de ponto-gatilho (por região muscular)",
     "porte": "3A"
   },
   {
-    "procedure_name": "VISITA HOSPITALAR - COLUNA I (Patologias Não Traumáticas)",
+    "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
     "porte": "1A"
@@ -600,10 +672,64 @@
     "porte": "10C"
   },
   {
-    "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.08-0",
     "description": "Tratamento cirúrgico da fratura do crânio/afundamento",
     "porte": "9B"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.14.01.30-9",
+    "description": "Tratamento cirúrgico do hematoma intracraniano",
+    "porte": "11C"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.04.04.12-6",
+    "description": "Ressecção do osso temporal",
+    "porte": "11B"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.02.10.10-0",
+    "description": "Reconstrução com rotação do músculo temporal",
+    "porte": "9C"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.02.09.05-6",
+    "description": "Correção cirúrgica de depressão (afundamento) da região frontal",
+    "porte": "10B"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.02.07.04-5",
+    "description": "Redução de fratura do seio frontal (acesso coronal)",
+    "porte": "8C"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.02.15.02-1",
+    "description": "Craniotomia descompressiva Ṫ",
+    "porte": "9C"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.01.01.68-9",
+    "description": "Reconstrução com retalho da gálea aponeurótica",
+    "porte": "8C"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.02.15.04-8",
+    "description": "Reconstrução craniana ou craniofacial",
+    "porte": "11A"
+  },
+  {
+    "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
+    "cbhpm_code": "3.14.01.26-0",
+    "description": "Tratamento cirúrgico da fístula liquórica",
+    "porte": "10C"
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
@@ -943,6 +1069,18 @@
   },
   {
     "procedure_name": "Monitorização da Pressão de Perfusão Cerebral (PPC)",
+    "cbhpm_code": "2.02.02.06-7",
+    "description": "Monitorização da pressão intracraniana",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "Monitorização da Autorregulação Cerebral - Índice de Reatividade Cerebrovascular (PRx)",
+    "cbhpm_code": "2.02.02.03-2",
+    "description": "Monitorização hemodinâmica invasiva por 12h",
+    "porte": "2A"
+  },
+  {
+    "procedure_name": "Monitorização da Autorregulação Cerebral - Índice de Reatividade Cerebrovascular (PRx)",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
     "porte": "2B"
@@ -1536,40 +1674,88 @@
     "porte": "9C"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.04.04.12-6",
+    "description": "Ressecção do osso temporal",
+    "porte": "11B"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.14.01.17-1",
+    "description": "Microcirurgia vascular intracraniana",
+    "porte": "14A"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
     "porte": "10B"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.24-4",
     "description": "Terceiro-ventriculostomia",
     "porte": "9C"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.05-8",
     "description": "Derivação Ventricular Externa ",
     "porte": "5C"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano ",
     "porte": "8A"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
     "porte": "10A"
   },
   {
-    "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
     "porte": "2B"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.01.01.68-9",
+    "description": "Reconstrução com retalho da gálea aponeurótica",
+    "porte": "8C"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.14.01.26-0",
+    "description": "Tratamento cirúrgico da fístula liquórica",
+    "porte": "10C"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.02.15.04-8",
+    "description": "Reconstrução craniana ou craniofacial",
+    "porte": "11A"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.02.07.07-0",
+    "description": "Fratura do arco zigomático - redução cirúrgica com fixação",
+    "porte": "9A"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.03.02.10-2",
+    "description": "Reconstituição de paredes orbitárias",
+    "porte": "9B"
+  },
+  {
+    "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
+    "cbhpm_code": "3.02.10.10-0",
+    "description": "Reconstrução com rotação do músculo temporal",
+    "porte": "9C"
   },
   {
     "procedure_name": "ENDARTERECTOMIA DE CARÓTIDA",
@@ -2196,16 +2382,94 @@
     "porte": "2C"
   },
   {
-    "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "3.09.11.09-5",
+    "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
+    "porte": "5A"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.56-8",
     "description": "Embolização de malformação arteriovenosa cerebral ou medular - por vaso",
     "porte": "10B"
   },
   {
-    "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.57-6",
     "description": "Embolização de fístula AV em cabeça, pescoço ou coluna -por vaso",
     "porte": "10A"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.13.54-1",
+    "description": "Embolização de aneurisma cerebral por oclusão sacular - por vaso",
+    "porte": "11B"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.05-7",
+    "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
+    "porte": "5C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.04-9",
+    "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
+    "porte": "4C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.03-0",
+    "description": "Angiografia por cateterismo não seletivo de grande vaso",
+    "porte": "5B"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.13.06-1",
+    "description": "Angioplastia de ramo intracraniano ",
+    "porte": "11A"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.06-5",
+    "description": "Angiografia trans-operatória de posicionamento",
+    "porte": "2C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.07-3",
+    "description": "Angiografia pos-operatória de controle",
+    "porte": "2C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.12.02-2",
+    "description": "Angiografia por punção",
+    "porte": "3C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.10.02-0",
+    "description": "Teste de oclusão de arteria carótida ou vertebral ",
+    "porte": "7B"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "3.09.12.21-0",
+    "description": "Retira percutânea de corpos estranhos vasculares",
+    "porte": "7C"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
+    "cbhpm_code": "3.01.01.23-9",
+    "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
+    "porte": "2C"
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
@@ -2826,25 +3090,25 @@
     "porte": "2C"
   },
   {
-    "procedure_name": "TROMBECTOMIA MECÂNICA",
+    "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
     "porte": "10A"
   },
   {
-    "procedure_name": "TROMBECTOMIA MECÂNICA",
+    "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
     "porte": "10A"
   },
   {
-    "procedure_name": "TROMBECTOMIA MECÂNICA",
+    "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.01-5",
     "description": "Biópsia estereotaxica do encéfalo",
     "porte": "10A"
   },
   {
-    "procedure_name": "TROMBECTOMIA MECÂNICA",
+    "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
     "porte": "2B"
@@ -3072,10 +3336,52 @@
     "porte": "2C"
   },
   {
-    "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "3.14.01.35-0",
+    "description": "Implante de halo para radiocirurgia",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção ",
     "porte": "10A"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "3.14.01.10-4",
+    "description": "Implante de eletrodos medular ou cerebral",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "3.14.01.09-0",
+    "description": "Implante de eletrodos cerebral profundo",
+    "porte": "8A"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "3.14.03.14-0",
+    "description": "Implante de gerador para neuroestimulação",
+    "porte": "8A"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "4.01.03.43-9",
+    "description": "Impedanciometria",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
+    "cbhpm_code": "1.01.05.07-7",
+    "description": "Acompanhamento médico para transporte intra-hospitalar",
+    "porte": "2C"
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
@@ -3180,40 +3486,112 @@
     "porte": "2B"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
+    "cbhpm_code": "3.14.04.03-0",
+    "description": "Tratamento da neuralgia do trigêmeo por via percutânea",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
     "porte": "2B"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
+    "cbhpm_code": "3.14.04.03-0",
+    "description": "Tratamento da neuralgia do trigêmeo por via percutânea",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
     "cbhpm_code": "3.16.02.13-4",
     "description": "Bloqueio neurolítico de nervos cranianos ou cervico-torácico",
     "porte": "6B"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
     "cbhpm_code": "3.14.02.01-1",
     "description": "Cordotomia-mielotomias por radiofrequência",
     "porte": "10B"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
     "porte": "9C"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
+    "cbhpm_code": "3.14.02.01-1",
+    "description": "Cordotomia-mielotomias por radiofrequência",
+    "porte": "10B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
+    "cbhpm_code": "4.01.03.43-9",
+    "description": "Impedanciometria",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
     "porte": "2B"
   },
   {
-    "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
+    "cbhpm_code": "3.14.02.01-1",
+    "description": "Cordotomia-mielotomias por radiofrequência",
+    "porte": "10B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "3.07.15.05-9",
     "description": "Cirurgia da coluna por via endoscópica",
     "porte": "11A"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
+    "cbhpm_code": "3.07.15.25-3",
+    "description": "Punção Liquórica",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
+    "cbhpm_code": "4.01.03.43-9",
+    "description": "Impedanciometria",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
   },
   {
     "procedure_name": "DREZOTOMIA",
@@ -3240,22 +3618,82 @@
     "porte": "2B"
   },
   {
-    "procedure_name": "DREZOTOMIA",
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
     "porte": "10A"
   },
   {
-    "procedure_name": "DREZOTOMIA",
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
     "porte": "3C"
   },
   {
-    "procedure_name": "DREZOTOMIA",
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
+    "cbhpm_code": "3.14.01.10-4",
+    "description": "Implante de eletrodos medular ou cerebral",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
     "porte": "8A"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
+    "cbhpm_code": "4.01.03.43-9",
+    "description": "Impedanciometria",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
+    "cbhpm_code": "3.16.02.22-3",
+    "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
+    "porte": "3C"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
+    "cbhpm_code": "3.14.01.10-4",
+    "description": "Implante de eletrodos medular ou cerebral",
+    "porte": "10A"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
+    "cbhpm_code": "3.07.15.19-9",
+    "description": "Laminectomia ou laminotomia",
+    "porte": "9C"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
+    "cbhpm_code": "3.14.03.14-0",
+    "description": "Implante de gerador para neuroestimulação",
+    "porte": "8A"
+  },
+  {
+    "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
+    "cbhpm_code": "4.01.03.43-9",
+    "description": "Impedanciometria",
+    "porte": "2B"
   },
   {
     "procedure_name": "RIZOTOMIA SELETIVA OU SUPERSELETIVA PARA ESPASTICIDADE",
@@ -3318,10 +3756,22 @@
     "porte": "2B"
   },
   {
-    "procedure_name": "BLOQUEIO DO GÂNGLIO ESTRELADO",
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
     "cbhpm_code": "3.16.02.13-4",
     "description": "Bloqueio Neurolítico de nervos cranianos ou cervico-toracico",
     "porte": "6B"
+  },
+  {
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
+    "cbhpm_code": "3.14.05.01-0",
+    "description": "Bloqueio do sistema nervoso autônomo",
+    "porte": "6A"
+  },
+  {
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
   },
   {
     "procedure_name": "INFILTRAÇÃO DE COLUNA (DOR AXIAL E/OU RADICULAR)",
@@ -3378,28 +3828,52 @@
     "porte": "2B"
   },
   {
-    "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
     "cbhpm_code": "3.16.02.14-2",
     "description": "Bloqueio Neurolítico do plexo celíaco, simpático lombar ou torácico",
     "porte": "6B"
   },
   {
-    "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
+    "cbhpm_code": "3.16.02.11-8",
+    "description": "Bloqueio de nervo periférico",
+    "porte": "3B"
+  },
+  {
+    "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
+  },
+  {
+    "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.07-0",
     "description": "Bloqueio anestésico simpático",
     "porte": "4C"
   },
   {
-    "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
+    "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
     "porte": "2B"
   },
   {
-    "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
+    "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
     "porte": "3C"
+  },
+  {
+    "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
+    "cbhpm_code": "3.16.02.11-8",
+    "description": "Bloqueio de nervo periférico",
+    "porte": "3B"
+  },
+  {
+    "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
+    "cbhpm_code": "4.08.11.02-6",
+    "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
+    "porte": "2B"
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
