@@ -1,5 +1,5 @@
 {
-  "name": "procediprize-frontend",
+  "name": "afere-frontend",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",

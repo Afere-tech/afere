@@ -4,11 +4,11 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "ProcediPriz",
+  title: "Afere",
   description: "Calculadora de honorários médicos para neurocirurgia.",
   icons: {
-    icon: [{ url: "/procedipriz-icon.svg", type: "image/svg+xml" }],
-    shortcut: [{ url: "/procedipriz-icon.svg", type: "image/svg+xml" }],
+    icon: [{ url: "/afere-icon.svg", type: "image/svg+xml" }],
+    shortcut: [{ url: "/afere-icon.svg", type: "image/svg+xml" }],
   },
 };
 

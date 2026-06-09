@@ -1,5 +1,5 @@
 {
-  "name": "ProcediPriz",
+  "name": "Afere",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -19,5 +19,9 @@
     }
   },
   "forwardPorts": [3000, 8080],
-  "postCreateCommand": "cd backend && go mod download && cd ../frontend && npm ci"
+  "remoteEnv": {
+    "GOPATH": "/home/vscode/go",
+    "GOMODCACHE": "/home/vscode/go/pkg/mod"
+  },
+  "postCreateCommand": "mkdir -p /home/vscode/go && cd backend && go mod download && cd ../frontend && npm ci"
 }

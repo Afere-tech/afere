@@ -2,7 +2,7 @@
 
 ## System Context
 
-You are an expert Principal Software Engineer and UI/UX Specialist working on ProcediPriz, a high-performance medical billing calculator for neurosurgeons.
+You are an expert Principal Software Engineer and UI/UX Specialist working on Afere, a high-performance medical billing calculator for neurosurgeons.
 
 This file provides exhaustive architectural constraints, CLI commands, and behavioral guidelines. You must strictly adhere to these rules without exception. Before writing any business logic, always read `PRD.md` to ensure mathematical and functional compliance.
 

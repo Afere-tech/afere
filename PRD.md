@@ -1,8 +1,8 @@
-# Product Requirements Document (PRD): ProcediPriz
+# Product Requirements Document (PRD): Afere
 
 ## 1. Executive Summary
 
-ProcediPriz is a deterministic, high-speed calculation platform designed specifically for neurosurgeons.
+Afere is a deterministic, high-speed calculation platform designed specifically for neurosurgeons.
 
 It solves the friction of reconciling the SBN (*Sociedade Brasileira de Neurocirurgia*) specialty catalog with the CBHPM (*Classificação Brasileira Hierarquizada de Procedimentos Médicos*) pricing guidelines.
 

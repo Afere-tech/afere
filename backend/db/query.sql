@@ -1,18 +1,52 @@
+-- Queries for the Afere domain model (sbn_procedures → sbn_cbhpm_mappings → cbhpm_codes).
+-- These are the canonical queries used by PostgresRepository.
+-- If sqlc codegen is wired into CI, these become the source of truth for generated types.
+
 -- name: SearchProcedures :many
-SELECT procedure_name, cbhpm_code, description, porte
-FROM procedures
-WHERE procedure_name ILIKE '%' || sqlc.arg(query) || '%'
-   OR cbhpm_code ILIKE '%' || sqlc.arg(query) || '%'
-   OR description ILIKE '%' || sqlc.arg(query) || '%'
-ORDER BY procedure_name
+-- Returns up to 20 SBN procedures matching the query, ordered by relevance:
+--   0 = procedure name starts with the query (strongest signal)
+--   1 = procedure name contains the query
+--   2 = match is only in a CBHPM code or description
+-- The trigram indexes on unaccent(lower(name)) and unaccent(lower(description))
+-- (created in migration 004) make the ILIKE patterns sub-millisecond on Neon.
+SELECT id, name
+FROM (
+    SELECT DISTINCT ON (sp.id)
+        sp.id::text AS id,
+        sp.name,
+        CASE
+            WHEN unaccent(lower(sp.name)) ILIKE unaccent(lower(sqlc.arg(query))) || '%'   THEN 0
+            WHEN unaccent(lower(sp.name)) ILIKE '%' || unaccent(lower(sqlc.arg(query))) || '%' THEN 1
+            ELSE 2
+        END AS relevance
+    FROM sbn_procedures sp
+    LEFT JOIN sbn_cbhpm_mappings m  ON m.sbn_procedure_id = sp.id
+    LEFT JOIN cbhpm_codes cc        ON cc.id = m.cbhpm_code_id
+    WHERE
+        unaccent(lower(sp.name))           ILIKE '%' || unaccent(lower(sqlc.arg(query))) || '%'
+        OR unaccent(lower(cc.code))        ILIKE '%' || unaccent(lower(sqlc.arg(query))) || '%'
+        OR unaccent(lower(cc.description)) ILIKE '%' || unaccent(lower(sqlc.arg(query))) || '%'
+    ORDER BY sp.id
+) sub
+ORDER BY relevance, name
 LIMIT 20;
 
--- name: GetProcedureByCode :one
-SELECT procedure_name, cbhpm_code, description, porte
-FROM procedures
-WHERE cbhpm_code = sqlc.arg(cbhpm_code);
+-- name: GetProcedureByID :one
+SELECT id::text, name
+FROM sbn_procedures
+WHERE id = sqlc.arg(id)::uuid;
+
+-- name: GetProcedureCodes :many
+SELECT
+    cc.code,
+    cc.description,
+    m.porte_code AS porte
+FROM sbn_cbhpm_mappings m
+JOIN cbhpm_codes cc ON cc.id = m.cbhpm_code_id
+WHERE m.sbn_procedure_id = sqlc.arg(sbn_procedure_id)::uuid
+ORDER BY m.sort_order, cc.code;
 
 -- name: GetPorteValue :one
-SELECT porte, value_cents
-FROM porte_values
-WHERE porte = sqlc.arg(porte);
+SELECT code, value_brl
+FROM portes
+WHERE code = sqlc.arg(code);

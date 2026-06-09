@@ -3,9 +3,9 @@ import re
 import pdfplumber
 from typing import List, Dict, Optional
 
-class ProcediPrizETL:
+class AfereETL:
     """
-    Script de Extração e Cálculo para o ProcediPriz (LabF5).
+    Script de Extração e Cálculo para o Afere (LabF5).
     Versão definitiva com importação global de dependências e caminhos relativos ao monorepo.
     """
 
@@ -72,7 +72,7 @@ class ProcediPrizETL:
         Gera um ficheiro SQL otimizado para popular o PostgreSQL (Neon).
         """
         with open(output_path, 'w', encoding='utf-8') as f:
-            f.write("-- Estrutura e Inserção de Dados - ProcediPriz\n\n")
+            f.write("-- Estrutura e Inserção de Dados - Afere\n\n")
             f.write("CREATE TABLE IF NOT EXISTS portes_valores (\n")
             f.write("    porte VARCHAR(5) PRIMARY KEY,\n")
             f.write("    valor NUMERIC(10, 2) NOT NULL\n")
@@ -114,7 +114,7 @@ class ProcediPrizETL:
 
 if __name__ == '__main__':
     # O script está dentro de 'data/', então ele deve procurar na subpasta 'raw_pdfs/'
-    etl = ProcediPrizETL(
+    etl = AfereETL(
         'raw_pdfs/cbac6c_d991322923c24d01b46e1fdd39af6e73.pdf', 
         'raw_pdfs/COMUNICADO-CBHPM-2025_2026.pdf'
     )

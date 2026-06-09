@@ -1,42 +1,87 @@
 openapi: 3.0.3
 info:
-  title: ProcediPriz API
-  version: 1.0.0
-  description: Core API for calculating medical procedure prices based on SBN and CBHPM catalogs.
+  title: Afere API
+  version: 2.0.0
+  description: >
+    Composition-builder API for the Afere medical procedure valuation platform.
+    Implements the correct SBN → N CBHPM domain model.
+
 servers:
   - url: http://localhost:8080
     description: Local development server
+
 paths:
+  /api/health:
+    get:
+      summary: Health check
+      operationId: health
+      responses:
+        '200':
+          description: Service is healthy.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
   /api/procedures/search:
     get:
-      summary: Search for procedures
-      description: Performs a fast text search against SBN procedure names and CBHPM descriptions.
+      summary: Search SBN procedures
+      description: >
+        Returns a deduplicated list of SBN procedures whose name, or any of their
+        associated CBHPM codes / descriptions, matches the query.
       operationId: searchProcedures
       parameters:
         - name: q
           in: query
           required: true
-          description: Search term (e.g., procedure name or code).
           schema:
             type: string
             minLength: 2
+          description: Search term (procedure name, CBHPM code, or description keyword).
       responses:
         '200':
-          description: A list of matched procedures.
+          description: List of matching SBN procedures.
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/ProcedureSearchResult'
+                  $ref: '#/components/schemas/SBNProcedureResult'
         '400':
-          description: Invalid search query.
+          description: Invalid or too-short query.
+
+  /api/procedures/{id}:
+    get:
+      summary: Get SBN procedure with its CBHPM codes
+      description: >
+        Returns the full procedure package: name plus all suggested CBHPM codes
+        with their default porte from the SBN mapping.
+      operationId: getProcedureByID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: SBN procedure ID.
+      responses:
+        '200':
+          description: Procedure detail with suggested CBHPM codes.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProcedureDetail'
+        '404':
+          description: Procedure not found.
 
   /api/calculate:
     post:
-      summary: Calculate procedure final price
-      description: Calculates the definitive billing price based on the selected code, auxiliaries, and anesthesia necessity.
-      operationId: calculatePrice
+      summary: Calculate total valuation for a composition
+      description: >
+        Accepts a physician-assembled composition of CBHPM codes (each with a
+        chosen porte) plus staffing configuration, and returns a per-code
+        breakdown and final total.
+      operationId: calculate
       requestBody:
         required: true
         content:
@@ -45,82 +90,142 @@ paths:
               $ref: '#/components/schemas/CalculateRequest'
       responses:
         '200':
-          description: Successful calculation with detailed breakdown.
+          description: Detailed valuation breakdown.
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/CalculateResponse'
-        '404':
-          description: CBHPM code not found.
+        '400':
+          description: Invalid request body.
 
 components:
   schemas:
-    ProcedureSearchResult:
+    HealthResponse:
       type: object
-      required:
-        - procedure_name
-        - cbhpm_code
-        - description
-        - porte
+      required: [status]
       properties:
-        procedure_name:
+        status:
           type: string
-          description: Name of the procedure from the SBN manual.
-        cbhpm_code:
+          example: ok
+
+    SBNProcedureResult:
+      type: object
+      required: [id, name]
+      properties:
+        id:
           type: string
-          description: CBHPM code (e.g., "3.14.03.17-4").
+          description: Stable identifier for the SBN procedure package.
+        name:
+          type: string
+          description: SBN procedure name (e.g. "CONSULTA + PUNÇÃO LOMBAR").
+
+    CBHPMCodeEntry:
+      type: object
+      required: [code, description, porte]
+      properties:
+        code:
+          type: string
+          description: CBHPM code (e.g. "3.07.15.25-3").
         description:
           type: string
-          description: CBHPM description of the procedure.
+          description: CBHPM description from the SBN mapping.
         porte:
           type: string
-          description: Assigned porte (e.g., "13A", "8B").
+          description: Default porte from the SBN mapping (e.g. "2B").
+
+    ProcedureDetail:
+      type: object
+      required: [id, name, cbhpm_codes]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        cbhpm_codes:
+          type: array
+          items:
+            $ref: '#/components/schemas/CBHPMCodeEntry'
+
+    SelectedCode:
+      type: object
+      required: [cbhpm_code, description, porte]
+      properties:
+        cbhpm_code:
+          type: string
+          description: CBHPM code selected by the physician.
+        description:
+          type: string
+          description: CBHPM description (passed through from the procedure detail).
+        porte:
+          type: string
+          description: Porte chosen by the physician (may differ from the SBN default).
 
     CalculateRequest:
       type: object
-      required:
-        - cbhpm_code
-        - auxiliaries_count
-        - requires_anesthesia
+      required: [selected_codes, auxiliaries_count, requires_anesthesia]
       properties:
-        cbhpm_code:
-          type: string
-          description: The CBHPM code selected by the user.
+        selected_codes:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/SelectedCode'
+          description: Physician-selected CBHPM codes with their chosen portes.
         auxiliaries_count:
           type: integer
           minimum: 0
           maximum: 4
-          description: Number of auxiliary surgeons (0 to 4).
+          description: Number of auxiliary surgeons (0–4).
         requires_anesthesia:
           type: boolean
-          description: Indicates if an anesthesiologist is required.
+          description: Whether an anesthesiologist is required.
+
+    CodeBreakdown:
+      type: object
+      required: [cbhpm_code, description, porte, base_value]
+      properties:
+        cbhpm_code:
+          type: string
+        description:
+          type: string
+        porte:
+          type: string
+        base_value:
+          type: number
+          format: float
+          description: Monetary value of this code's porte.
 
     CalculateResponse:
       type: object
       required:
-        - base_porte_value
+        - code_breakdown
+        - total_base
         - lead_surgeon_fee
         - auxiliaries_fee
         - anesthesiologist_fee
         - final_total
       properties:
-        base_porte_value:
+        code_breakdown:
+          type: array
+          items:
+            $ref: '#/components/schemas/CodeBreakdown'
+          description: Per-code contribution to the total base.
+        total_base:
           type: number
           format: float
-          description: Raw value of the code's porte.
+          description: Sum of all selected code porte values.
         lead_surgeon_fee:
           type: number
           format: float
-          description: Fee for the lead surgeon (100% of base).
+          description: Lead surgeon fee (100% of total_base).
         auxiliaries_fee:
           type: number
           format: float
-          description: Total fee for all auxiliaries combined (30% for 1st, 20% for rest).
+          description: Combined auxiliaries fee (30% first + 20% each subsequent).
         anesthesiologist_fee:
           type: number
           format: float
-          description: Fee for the anesthesiologist (if applicable).
+          description: Fixed anesthesiologist fee (if applicable).
         final_total:
           type: number
           format: float
-          description: The definitive total price of the procedure.
+          description: Grand total (lead + auxiliaries + anesthesia).

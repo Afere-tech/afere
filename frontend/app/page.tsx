@@ -1,353 +1,460 @@
 "use client";
 
-import {
-  Activity,
-  Calculator,
-  HeartPulse,
-  Info,
-  Moon,
-  Share2,
-  Check,
-  Stethoscope,
-  Sun,
-} from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
-import { Autocomplete, type ProcedureOption } from "@/components/ui/autocomplete";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Toggle } from "@/components/ui/toggle";
-import { useTheme } from "@/components/theme-provider";
+import { Search } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 
-type Calculation = {
-  base_porte_value: number;
-  lead_surgeon_fee: number;
-  auxiliaries_fee: number;
-  anesthesiologist_fee: number;
-  final_total: number;
-};
+// ─── Fixed design tokens — no dark/light switching on this page ──────────────
 
-const money = new Intl.NumberFormat("pt-BR", {
-  style: "currency",
-  currency: "BRL",
-});
+const T = {
+  bg:          "#F1F5F9",
+  surface:     "#FFFFFF",
+  cardBorder:  "#E2E8F0",
+  primary:     "#0F172A",
+  secondary:   "#475569",
+  muted:       "#64748B",
+  inputBorder: "#CBD5E1",
+  inputFocus:  "#94A3B8",
+  btnBg:       "#1E293B",
+  btnHover:    "#334155",
+  btnDisabled: "#CBD5E1",
+  dropHover:   "#F8FAFC",
+} as const;
+
+const EXAMPLES = [
+  "Cateter de PIC",
+  "Craniotomia descompressiva",
+  "Derivação ventrículo-peritoneal",
+  "Aneurisma cerebral",
+];
+
+type ProcedureHit = { id: string; name: string };
 
 export default function Home() {
-  const { isDark, toggle } = useTheme();
-  const [procedureOptions, setProcedureOptions] = useState<ProcedureOption[]>([]);
-  const [selectedProcedure, setSelectedProcedure] = useState<ProcedureOption | null>(null);
-  const [porte, setPorte] = useState("");
-  const [auxiliariesCount, setAuxiliariesCount] = useState(1);
-  const [requiresAnesthesia, setRequiresAnesthesia] = useState(true);
-  const [calculation, setCalculation] = useState<Calculation | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [copied, setCopied] = useState(false);
+  const router = useRouter();
+  const [query, setQuery] = useState("");
+  const [focused, setFocused] = useState(false);
+  const [hits, setHits] = useState<ProcedureHit[]>([]);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(-1);
+  const [searching, setSearching] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+
+  // ── Debounced search ───────────────────────────────────────────────────────
 
   useEffect(() => {
-    setPorte(selectedProcedure?.porte ?? "");
-  }, [selectedProcedure]);
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    if (query.trim().length < 2) {
+      setHits([]);
+      setDropdownOpen(false);
+      return;
+    }
+    debounceRef.current = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/procedures/search?q=${encodeURIComponent(query)}`);
+        if (res.ok) {
+          const data: ProcedureHit[] = await res.json();
+          setHits(data ?? []);
+          setDropdownOpen((data ?? []).length > 0);
+          setActiveIdx(-1);
+        }
+      } catch {
+        // leave existing hits on network error
+      }
+    }, 180);
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current);
+    };
+  }, [query]);
+
+  // ── Close dropdown on outside click ───────────────────────────────────────
 
   useEffect(() => {
-    fetch("/api/health").catch(() => {});
+    function onPointerDown(e: PointerEvent) {
+      if (formRef.current && !formRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
   }, []);
 
-  useEffect(() => {
-    if (searchQuery.trim().length < 2) {
-      setProcedureOptions([]);
-      return;
-    }
-  
-    const timer = setTimeout(() => {
-      searchProcedures(searchQuery);
-    }, 300);
-  
-    return () => clearTimeout(timer);
-  }, [searchQuery]);
+  // ── Navigation ─────────────────────────────────────────────────────────────
 
-  const canCalculate = useMemo(() => selectedProcedure !== null, [selectedProcedure]);
-
-  function shareCalculation() {
-    if (!selectedProcedure || !calculation) return;
-    const url = new URL("/share", window.location.origin);
-    url.searchParams.set("p", selectedProcedure.cbhpm_code);
-    url.searchParams.set("a", String(auxiliariesCount));
-    url.searchParams.set("an", requiresAnesthesia ? "1" : "0");
-    navigator.clipboard.writeText(url.toString()).then(() => {
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    });
+  function selectHit(hit: ProcedureHit) {
+    setDropdownOpen(false);
+    router.push(`/procedure?sbn=${encodeURIComponent(hit.id)}`);
   }
 
-  async function calculate() {
-    if (!selectedProcedure) return;
+  async function handleSubmit(e: React.SyntheticEvent) {
+    e.preventDefault();
 
-    const response = await fetch("/api/calculate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        cbhpm_code: selectedProcedure.cbhpm_code,
-        auxiliaries_count: auxiliariesCount,
-        requires_anesthesia: requiresAnesthesia,
-      }),
-    });
-
-    if (response.ok) {
-      setCalculation(await response.json());
-    }
-  }
-
-  async function searchProcedures(query: string) {
-    if (query.trim().length < 2) {
-      setProcedureOptions([]);
+    // Keyboard-highlighted item takes priority
+    if (activeIdx >= 0 && hits[activeIdx]) {
+      selectHit(hits[activeIdx]);
       return;
     }
 
-    const response = await fetch(`/api/procedures/search?q=${encodeURIComponent(query)}`);
-    if (response.ok) {
-      setProcedureOptions(await response.json());
+    // Hits already cached from the debounce — use the first one
+    if (hits.length > 0) {
+      selectHit(hits[0]);
+      return;
+    }
+
+    const q = query.trim();
+    if (!q) { inputRef.current?.focus(); return; }
+
+    // Debounce hasn't fired yet — do an immediate fetch
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    setSearching(true);
+    setDropdownOpen(false);
+    try {
+      const res = await fetch(`/api/procedures/search?q=${encodeURIComponent(q)}`);
+      if (res.ok) {
+        const data: ProcedureHit[] = await res.json();
+        if (data?.length > 0) {
+          selectHit(data[0]);
+          return;
+        }
+      }
+    } catch {}
+
+    // Genuine fallback: no results — let procedure page handle the empty state
+    setSearching(false);
+    router.push(`/procedure?q=${encodeURIComponent(q)}`);
+  }
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (!dropdownOpen || hits.length === 0) return;
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActiveIdx((i) => Math.min(i + 1, hits.length - 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveIdx((i) => Math.max(i - 1, -1));
+    } else if (e.key === "Escape") {
+      setDropdownOpen(false);
     }
   }
+
+  function fillExample(ex: string) {
+    setQuery(ex);
+    inputRef.current?.focus();
+  }
+
+  const showDropdown = dropdownOpen && hits.length > 0;
 
   return (
-    <main className="hex-bg relative min-h-screen" style={{ backgroundColor: "hsl(var(--background))" }}>
-      {/* Floating nav */}
-      <div className="relative z-10 px-5 pt-5">
-        <nav
-          className="nav-bar mx-auto flex max-w-[1080px] items-center justify-between"
-        >
-          <div className="flex items-center gap-2.5">
-            <div
-              className="brand-mark flex h-9 w-9 items-center justify-center rounded-full"
-              style={{
-                background: "linear-gradient(135deg, hsl(186,72%,28%), hsl(186,72%,22%))",
-                boxShadow: "0 2px 8px hsla(186,72%,28%,0.35)",
-              }}
-            >
-              <Activity aria-hidden="true" className="text-white" size={18} />
-            </div>
-            <div>
-              <span className="block text-base font-extrabold tracking-tight text-slate-950 dark:text-slate-50">
-                ProcediPriz
-              </span>
-              <span className="block text-[10px] font-medium tracking-[0.3px] text-slate-500 dark:text-slate-400 leading-none">
-                NEUROCIRURGIA
-              </span>
-            </div>
-          </div>
-          <button
-            onClick={toggle}
-            aria-checked={isDark}
-            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-            className="theme-switch relative inline-flex h-8 w-14 cursor-pointer items-center rounded-full border transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            role="switch"
-            type="button"
-          >
-            <Sun
-              aria-hidden="true"
-              size={13}
-              className="absolute left-2 text-amber-500 transition-opacity dark:opacity-35"
-            />
-            <Moon
-              aria-hidden="true"
-              size={13}
-              className="absolute right-2 text-slate-500 opacity-45 transition-opacity dark:text-cyan-200 dark:opacity-100"
-            />
-            <span
-              aria-hidden="true"
-              className={`theme-switch-thumb absolute top-1 h-6 w-6 rounded-full transition-transform duration-200 ${
-                isDark ? "translate-x-7" : "translate-x-1"
-              }`}
-            />
-          </button>
-        </nav>
-      </div>
+    <main
+      style={{
+        minHeight: "100vh",
+        backgroundColor: T.bg,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "40px 20px",
+      }}
+    >
+      <div style={{ width: "100%", maxWidth: "620px" }}>
 
-      {/* Hero */}
-      <div className="relative z-[1] px-5 pb-6 pt-8 text-center">
-        <h1 className="m-0 mb-1.5 text-[30px] font-extrabold tracking-tight text-slate-950 dark:text-slate-50">
-          Cálculo de Honorários
-        </h1>
-        <p className="m-0 text-sm font-medium text-slate-500 dark:text-slate-400">
-          Baseado na tabela CBHPM · Resultados instantâneos
-        </p>
-      </div>
-
-      {/* Main grid */}
-      <div
-        className="main-grid relative z-[1] mx-auto grid max-w-[1080px] gap-7 px-5 pb-12"
-      >
-        {/* Left panel */}
+        {/* ── Card ── */}
         <div
-          className="card-plush rounded-3xl border border-slate-200/80 dark:border-slate-700 bg-white dark:bg-slate-900 p-8"
+          style={{
+            backgroundColor: T.surface,
+            borderRadius: "12px",
+            border: `1px solid ${T.cardBorder}`,
+            padding: "44px 40px 36px",
+            boxShadow: "0 1px 3px rgba(15,23,42,0.07), 0 4px 20px rgba(15,23,42,0.05)",
+          }}
         >
-          <div className="mb-6 flex items-center gap-2">
-            <Stethoscope aria-hidden="true" className="text-primary" size={18} />
-            <h2 className="m-0 text-[15px] font-bold text-slate-950 dark:text-slate-50">
-              Configuração do Procedimento
-            </h2>
-          </div>
 
-          {/* Search */}
-          <div className="mb-5">
-            <Autocomplete
-              label="Buscar Procedimento"
-              options={procedureOptions}
-              value={selectedProcedure}
-              onChange={setSelectedProcedure}
-              onSearch={setSearchQuery}
-            />
-          </div>
-
-          {/* Porte + Auxiliaries */}
-          <div className="mb-5 grid gap-3.5 sm:grid-cols-2">
-            <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500">
-                Porte do Procedimento
-              </label>
-              <Input value={porte} onChange={(e) => setPorte(e.target.value)} />
-            </div>
-            <div>
-              <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500 dark:text-slate-400">
-                Número de Auxiliares
-              </label>
-              <Input
-                min={0}
-                max={4}
-                type="number"
-                value={auxiliariesCount}
-                onChange={(e) => setAuxiliariesCount(Number(e.target.value))}
+          {/* ── Brand ── */}
+          <div style={{ textAlign: "center", marginBottom: "36px" }}>
+            <div style={{ display: "flex", justifyContent: "center", marginBottom: "18px" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/afere-icon.svg"
+                alt=""
+                aria-hidden="true"
+                width={60}
+                height={60}
+                style={{ borderRadius: "14px", display: "block" }}
               />
             </div>
-          </div>
-
-          {/* Anesthesiologist toggle */}
-          <div
-            className="medical-toggle-panel mb-6 flex items-center justify-between gap-4 rounded-2xl border px-4 py-4"
-          >
-            <div className="flex items-center gap-2.5">
-              <div
-                className="clinical-icon-chip flex h-8 w-8 items-center justify-center rounded-full"
-              >
-                <HeartPulse aria-hidden="true" size={16} />
-              </div>
-              <div>
-                <div className="text-[13px] font-semibold text-slate-950 dark:text-slate-50">Anestesiologista</div>
-                <div className="text-[11px] text-slate-500 dark:text-slate-400">Incluir honorários do anestesista</div>
-              </div>
-            </div>
-            <Toggle checked={requiresAnesthesia} onChange={setRequiresAnesthesia} />
-          </div>
-
-          {/* Calculate button */}
-          <Button disabled={!canCalculate} onClick={calculate}>
-            <Calculator aria-hidden="true" size={18} />
-            Calcular Honorários
-          </Button>
-        </div>
-
-        {/* Right panel – results */}
-        <div className="results-card relative overflow-hidden rounded-3xl border border-primary/15 dark:border-teal-300/20 p-7">
-          <div className="mb-6 flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Calculator aria-hidden="true" className="text-primary" size={18} />
-              <h2 className="m-0 text-[15px] font-bold text-slate-950 dark:text-slate-50">Resultado</h2>
-            </div>
-            <span
-              className="clinical-pill rounded-full px-2.5 py-1 text-[11px] font-semibold"
+            <h1
+              style={{
+                margin: "0 0 7px",
+                fontSize: "27px",
+                fontWeight: 800,
+                letterSpacing: "-0.5px",
+                color: T.primary,
+                lineHeight: 1.1,
+              }}
             >
-              CBHPM 2025
-            </span>
-          </div>
-
-          {/* Line items */}
-          <dl className="space-y-3.5 dark:text-slate-200">
-            <ResultRow label="Cirurgião principal" value={calculation?.lead_surgeon_fee} />
-            <ResultRow
-              label={`Auxiliares${auxiliariesCount > 1 ? ` (×${auxiliariesCount})` : ""}`}
-              value={calculation?.auxiliaries_fee}
-            />
-            <ResultRow label="Anestesiologista" value={calculation?.anesthesiologist_fee} />
-          </dl>
-
-          {/* Dashed divider */}
-          <div className="teal-divider my-5" />
-
-          {/* Total block */}
-          <div
-            className="rounded-2xl p-4 text-white"
-            style={{
-              background: "linear-gradient(135deg, hsl(186,72%,28%), hsl(186,68%,22%))",
-              boxShadow: "0 4px 20px hsla(186,72%,28%,0.35)",
-            }}
-          >
-            <div className="mb-1.5 text-xs font-semibold uppercase tracking-[0.5px] opacity-75">
-              Total Final
-            </div>
-            <div className="font-grotesk text-[36px] font-bold leading-none tracking-tight">
-              {calculation ? money.format(calculation.final_total) : "—"}
-            </div>
-            {selectedProcedure && (
-              <div className="mt-1.5 text-[11px] font-medium opacity-65">
-                {selectedProcedure.procedure_name}
-                {porte ? ` · Porte ${porte}` : ""}
-              </div>
-            )}
-          </div>
-
-          {/* Share button */}
-          {calculation && (
-            <button
-              id="share-calculation-btn"
-              onClick={shareCalculation}
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/25 px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/5 active:scale-[0.98] dark:border-teal-300/20 dark:text-teal-300"
-              type="button"
+              Afere
+            </h1>
+            <p
+              style={{
+                margin: 0,
+                fontSize: "13.5px",
+                fontWeight: 500,
+                color: T.secondary,
+                letterSpacing: "0.1px",
+              }}
             >
-              {copied ? (
-                <><Check size={16} /> Link copiado!</>
-              ) : (
-                <><Share2 size={16} /> Compartilhar cálculo</>
-              )}
-            </button>
-          )}
-
-          {/* Disclaimer */}
-          <div className="mt-4 flex items-start gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-800/50 p-3">
-            <Info aria-hidden="true" className="mt-px shrink-0 text-slate-400 dark:text-slate-500" size={15} />
-            <p className="m-0 text-[11px] font-medium leading-relaxed text-slate-400 dark:text-slate-500">
-              Valores calculados conforme Tabela CBHPM 2025/2026. Sujeito à variação por convênio.
+              Valoração de Procedimentos Médicos
             </p>
           </div>
+
+          {/* ── Search form ── */}
+          <form ref={formRef} onSubmit={handleSubmit} autoComplete="off">
+            <label
+              htmlFor="procedure-search"
+              style={{
+                display: "block",
+                marginBottom: "7px",
+                fontSize: "13px",
+                fontWeight: 600,
+                color: T.secondary,
+              }}
+            >
+              Procedimento
+            </label>
+
+            <div style={{ position: "relative", marginBottom: "10px" }}>
+              <Search
+                size={15}
+                aria-hidden="true"
+                style={{
+                  position: "absolute",
+                  left: "13px",
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  color: T.inputFocus,
+                  pointerEvents: "none",
+                  zIndex: 1,
+                }}
+              />
+              <input
+                id="procedure-search"
+                ref={inputRef}
+                role="combobox"
+                aria-autocomplete="list"
+                aria-expanded={showDropdown}
+                aria-activedescendant={activeIdx >= 0 ? `hit-${activeIdx}` : undefined}
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                onFocus={() => {
+                  setFocused(true);
+                  if (hits.length > 0) setDropdownOpen(true);
+                }}
+                onBlur={() => setFocused(false)}
+                onKeyDown={handleKeyDown}
+                placeholder="Digite o nome do procedimento..."
+                style={{
+                  width: "100%",
+                  height: "48px",
+                  paddingLeft: "38px",
+                  paddingRight: "14px",
+                  fontSize: "14.5px",
+                  fontFamily: "inherit",
+                  color: T.primary,
+                  backgroundColor: T.surface,
+                  border: `1.5px solid ${focused ? T.inputFocus : T.inputBorder}`,
+                  borderRadius: showDropdown ? "10px 10px 0 0" : "10px",
+                  outline: "none",
+                  boxSizing: "border-box",
+                  transition: "border-color 150ms ease, border-radius 80ms ease",
+                  boxShadow: focused ? `0 0 0 3px ${T.inputFocus}28` : "none",
+                }}
+              />
+
+              {/* ── Autocomplete dropdown ── */}
+              {showDropdown && (
+                <ul
+                  role="listbox"
+                  aria-label="Procedimentos encontrados"
+                  style={{
+                    position: "absolute",
+                    top: "47px",
+                    left: 0,
+                    right: 0,
+                    backgroundColor: T.surface,
+                    border: `1.5px solid ${T.inputFocus}`,
+                    borderTop: `1px solid #EEF1F5`,
+                    borderRadius: "0 0 10px 10px",
+                    boxShadow: "0 8px 24px rgba(15,23,42,0.09)",
+                    maxHeight: "240px",
+                    overflowY: "auto",
+                    listStyle: "none",
+                    margin: 0,
+                    padding: "4px 0",
+                    zIndex: 50,
+                  }}
+                >
+                  {hits.map((hit, i) => (
+                    <li
+                      key={hit.id}
+                      id={`hit-${i}`}
+                      role="option"
+                      aria-selected={i === activeIdx}
+                      onPointerDown={(e) => {
+                        e.preventDefault();
+                        selectHit(hit);
+                      }}
+                      onMouseEnter={() => setActiveIdx(i)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        padding: "9px 14px",
+                        cursor: "pointer",
+                        backgroundColor: i === activeIdx ? T.dropHover : "transparent",
+                        transition: "background-color 80ms ease",
+                      }}
+                    >
+                      <Search
+                        size={12}
+                        aria-hidden="true"
+                        style={{ color: T.inputFocus, flexShrink: 0 }}
+                      />
+                      <span
+                        style={{
+                          fontSize: "13.5px",
+                          fontWeight: 500,
+                          color: T.primary,
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {hit.name}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+
+            <PesquisarButton disabled={!query.trim()} loading={searching} />
+          </form>
+
+          {/* ── Helper text ── */}
+          <p
+            style={{
+              margin: "16px 0 0",
+              fontSize: "12.5px",
+              lineHeight: "1.65",
+              color: T.muted,
+            }}
+          >
+            Pesquise um procedimento para revisar os códigos CBHPM sugeridos,
+            selecionar a composição desejada e calcular a valoração final.
+          </p>
+
+          {/* ── Examples ── */}
+          <div style={{ marginTop: "22px" }}>
+            <p
+              style={{
+                margin: "0 0 9px",
+                fontSize: "11px",
+                fontWeight: 600,
+                letterSpacing: "0.5px",
+                textTransform: "uppercase",
+                color: T.muted,
+              }}
+            >
+              Exemplos
+            </p>
+            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
+              {EXAMPLES.map((ex) => (
+                <ExampleChip key={ex} label={ex} onClick={() => fillExample(ex)} />
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="relative z-[1] px-5 pb-5 text-center">
-        <div
-          className="footer-divider mb-3.5 h-px"
-        />
-        <p className="m-0 text-xs font-medium text-slate-400 dark:text-slate-500">
-          2026 &nbsp;·&nbsp;{" "}
-          <span className="font-bold text-slate-500">LabF5</span>
-          &nbsp;·&nbsp; Todos os direitos reservados
-        </p>
-      </footer>
     </main>
   );
 }
 
-function ResultRow({
-  label,
-  value,
-}: {
-  label: string;
-  value: number | undefined;
-}) {
+// ─── Sub-components ───────────────────────────────────────────────────────────
+
+function PesquisarButton({ disabled, loading }: { disabled: boolean; loading: boolean }) {
+  const [hovered, setHovered] = useState(false);
+  const inactive = disabled || loading;
+
   return (
-    <div className="flex items-end justify-between gap-1">
-      <dt className="shrink-0 text-[13px] font-medium text-slate-500 dark:text-slate-400">{label}</dt>
-      <div className="leader" />
-      <dd className="font-grotesk shrink-0 text-sm font-semibold text-slate-950 dark:text-slate-50">
-        {value === undefined ? "—" : money.format(value)}
-      </dd>
-    </div>
+    <button
+      type="submit"
+      disabled={inactive}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        width: "100%",
+        height: "46px",
+        backgroundColor: inactive ? T.btnDisabled : hovered ? T.btnHover : T.btnBg,
+        color: "#FFFFFF",
+        border: "none",
+        borderRadius: "10px",
+        fontSize: "14px",
+        fontWeight: 600,
+        letterSpacing: "0.1px",
+        fontFamily: "inherit",
+        cursor: inactive ? "default" : "pointer",
+        transition: "background-color 140ms ease",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "8px",
+      }}
+    >
+      {loading && (
+        <span
+          aria-hidden="true"
+          style={{
+            width: "14px",
+            height: "14px",
+            border: "2px solid rgba(255,255,255,0.4)",
+            borderTopColor: "#fff",
+            borderRadius: "50%",
+            display: "inline-block",
+            animation: "spin 0.7s linear infinite",
+          }}
+        />
+      )}
+      {loading ? "Pesquisando..." : "Pesquisar"}
+    </button>
+  );
+}
+
+function ExampleChip({ label, onClick }: { label: string; onClick: () => void }) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        padding: "5px 12px",
+        backgroundColor: hovered ? "#F1F5F9" : "transparent",
+        border: `1px solid ${hovered ? T.inputBorder : T.cardBorder}`,
+        borderRadius: "100px",
+        fontSize: "12px",
+        fontWeight: 500,
+        fontFamily: "inherit",
+        color: hovered ? T.primary : T.muted,
+        cursor: "pointer",
+        transition: "background-color 120ms ease, border-color 120ms ease, color 120ms ease",
+      }}
+    >
+      {label}
+    </button>
   );
 }

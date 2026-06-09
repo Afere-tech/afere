@@ -1,12 +1,13 @@
-# ProcediPriz
+# Afere
 
-**ProcediPriz** is a high-performance engineering solution strictly designed to solve one of the biggest operational bottlenecks in the medical billing routine of neurosurgeons: the agile, precise, and deterministic reconciliation of fees. The platform cross-references the specialty catalog of the SBN (Sociedade Brasileira de Neurocirurgia) with the guidelines and valuation tables of the CBHPM (Classificação Brasileira Hierarquizada de Procedimentos Médicos) catalog.
+**Afere** is a high-performance engineering solution strictly designed to solve one of the biggest operational bottlenecks in the medical billing routine of neurosurgeons: the agile, precise, and deterministic reconciliation of fees. The platform cross-references the specialty catalog of the SBN (Sociedade Brasileira de Neurocirurgia) with the guidelines and valuation tables of the CBHPM (Classificação Brasileira Hierarquizada de Procedimentos Médicos) catalog.
 
 The entire application was architected under the **Spec-Driven Design (SDD)** philosophy, where API contracts and static models precede implementation, mitigating errors, eliminating the risk of medical billing rejections, and ensuring absolute mathematical compliance.
 
 ## Documentation
 
 - [Architecture](docs/architecture.md)
+- [Domain Model](docs/domain-model.md)
 - [Search Flow](docs/search-flow.md)
 - [Calculation Flow](docs/calculation-flow.md)
 - [Deployment](docs/deployment.md)
@@ -31,7 +32,7 @@ The ecosystem adopts a **Monorepo** approach, unifying the presentation and comp
 The monorepo topology is structured up to the third level of depth to ensure a strict segregation of responsibilities:
 
 ```text
-procedi-priz/
+afere/
 ├── .devcontainer/
 │   ├── devcontainer.json
 │   └── Dockerfile
@@ -56,13 +57,17 @@ procedi-priz/
 
 The calculations performed by the API's business layer translate the general medical billing rules with surgical precision:
 
-* **Cirurgião Principal:** 100% of the monetary value of the selected procedure's *porte*.
+One SBN surgical package maps to **one or more** CBHPM billable codes. Physicians compose a bill by selecting which codes to include and at what porte, then receive a real-time monetary breakdown per code and per role.
 
-* **1º Auxiliar:** 30% of the value assigned to the *Cirurgião Principal*.
+* **Cirurgião Principal:** 100% of the sum of all selected CBHPM code porte values (`total_base`).
 
-* **2º, 3º e 4º Auxiliares:** 20% of the *Cirurgião Principal*'s value (for each individual professional).
+* **1º Auxiliar:** 30% of `total_base`.
 
-* **Anestesiologista:** Adds 100% of the anesthesia *porte* value if the *Necessidade de Anestesia* flag is checked.
+* **2º, 3º e 4º Auxiliares:** 20% of `total_base` each.
+
+* **Anestesiologista:** Fixed R$ 1,200.00 if the anesthesia flag is enabled.
+
+See [Domain Model](docs/domain-model.md) for the full calculation specification and ER diagram.
 
 ### Linguistic Conventions
 
