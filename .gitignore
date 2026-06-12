@@ -12,6 +12,7 @@
 /frontend/.next/
 /frontend/out/
 /frontend/node_modules/
+/frontend/tsconfig.tsbuildinfo
 
 # Environment
 .env
