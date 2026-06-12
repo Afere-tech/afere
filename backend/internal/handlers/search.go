@@ -7,7 +7,7 @@ import (
 	"afere/backend/internal/repository"
 )
 
-func makeSearchHandler(repo repository.ProcedureRepository) http.HandlerFunc {
+func makeSearchHandler(repo repository.Repository) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {
 			http.Error(w, "method not allowed", http.StatusMethodNotAllowed)

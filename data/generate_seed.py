@@ -33,12 +33,14 @@ def main() -> None:
     proc_order:   list[str]         = []          # insertion order of procedure names
     proc_entries: dict[str, list]   = {}          # name → [{cbhpm_code, porte}, ...]
     cbhpm_descs:  dict[str, str]    = OrderedDict()  # code → description (first wins)
+    cbhpm_aux:    dict[str, int]    = {}          # code → num_auxiliaries (first wins)
 
     for row in data:
         name  = row["procedure_name"]
         code  = row["cbhpm_code"]
         desc  = row["description"]
         porte = row["porte"]
+        n_aux = row.get("num_auxiliaries", 0)
 
         if name not in proc_entries:
             proc_order.append(name)
@@ -46,6 +48,9 @@ def main() -> None:
 
         if code not in cbhpm_descs:
             cbhpm_descs[code] = desc
+
+        if code not in cbhpm_aux:
+            cbhpm_aux[code] = n_aux
 
         # Deduplicate CBHPM codes within this procedure (keep first occurrence)
         if not any(e["cbhpm_code"] == code for e in proc_entries[name]):
@@ -67,12 +72,17 @@ def main() -> None:
 
     # ── 1. CBHPM codes ────────────────────────────────────────────────────────
     lines.append("-- ── CBHPM codes ──────────────────────────────────────────────────────────────")
-    lines.append("INSERT INTO cbhpm_codes (code, description) VALUES")
+    lines.append("INSERT INTO cbhpm_codes (code, description, num_auxiliaries) VALUES")
     items = list(cbhpm_descs.items())
     for i, (code, desc) in enumerate(items):
         sep = "," if i < len(items) - 1 else ""
-        lines.append(f"    ('{esc(code)}', '{esc(desc)}'){sep}")
-    lines.append("ON CONFLICT (code) DO UPDATE SET description = EXCLUDED.description;")
+        n_aux = cbhpm_aux.get(code, 0)
+        lines.append(f"    ('{esc(code)}', '{esc(desc)}', {n_aux}){sep}")
+    lines.append(
+        "ON CONFLICT (code) DO UPDATE SET"
+        " description = EXCLUDED.description,"
+        " num_auxiliaries = EXCLUDED.num_auxiliaries;"
+    )
     lines.append("")
 
     # ── 2. SBN procedures ─────────────────────────────────────────────────────

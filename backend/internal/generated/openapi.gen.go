@@ -1,6 +1,11 @@
-// Package generated contains hand-written types matching openapi.yaml v3.0.0.
+// Package generated contains hand-written types matching openapi.yaml v3.1.0.
 // Regenerate with oapi-codegen when the generator is wired into CI.
 package generated
+
+import (
+	"encoding/json"
+	"time"
+)
 
 // HealthResponse is returned by GET /api/health.
 type HealthResponse struct {
@@ -81,13 +86,69 @@ type AuxiliaryFee struct {
 
 // CalculateResponse is returned by POST /api/calculate.
 type CalculateResponse struct {
-	CodeBreakdown         []CodeBreakdown `json:"code_breakdown"`
+	CodeBreakdown       []CodeBreakdown  `json:"code_breakdown"`
+	AccessRouteType     AccessRouteType  `json:"access_route_type"`
+	SurgeonBreakdown    SurgeonBreakdown `json:"surgeon_breakdown"`
+	LeadSurgeonFee      float64          `json:"lead_surgeon_fee"`
+	IndividualAuxFees   []AuxiliaryFee   `json:"individual_auxiliary_fees"`
+	AuxiliariesFee      float64          `json:"auxiliaries_fee"`
+	AnesthesiologistFee float64          `json:"anesthesiologist_fee"`
+	FinalTotal          float64          `json:"final_total"`
+	TotalBase           float64          `json:"total_base"`
+}
+
+// ─── Calculation persistence types (v3.1.0) ──────────────────────────────────
+
+// SaveCalculationRequest is the body for POST /api/calculations.
+// calculation_result must be a completed valuation (lead_surgeon_fee > 0).
+type SaveCalculationRequest struct {
+	ProcedureName      string          `json:"procedure_name"`
+	ProcedureSBNCode   string          `json:"procedure_sbn_code,omitempty"`
+	SelectedCodes      []SelectedCode  `json:"selected_codes"`
+	AuxiliariesCount   int             `json:"auxiliaries_count"`
+	RequiresAnesthesia bool            `json:"requires_anesthesia"`
+	AccessRouteType    AccessRouteType `json:"access_route_type"`
+	CalculationResult  CalculateResponse `json:"calculation_result"`
+}
+
+// SaveCalculationResponse is returned by a successful POST /api/calculations.
+// Only the public_id is exposed; use it to construct the shareable URL (/calc/{public_id}).
+type SaveCalculationResponse struct {
+	PublicID  string    `json:"public_id"`
+	CreatedAt time.Time `json:"created_at"`
+}
+
+// CalculationSummary is one item in the GET /api/calculations list response.
+// It omits selected codes and the full breakdown JSON to keep the payload compact.
+type CalculationSummary struct {
+	PublicID              string          `json:"public_id"`
+	ProcedureName         string          `json:"procedure_name"`
+	ProcedureSBNCode      string          `json:"procedure_sbn_code,omitempty"`
+	SurgeonValue          float64         `json:"surgeon_value"`
+	AuxiliariesTotalValue float64         `json:"auxiliaries_total_value"`
+	AnesthesiologistValue float64         `json:"anesthesiologist_value"`
+	TeamTotalValue        float64         `json:"team_total_value"`
+	AuxiliariesCount      int             `json:"auxiliaries_count"`
+	RequiresAnesthesia    bool            `json:"requires_anesthesia"`
 	AccessRouteType       AccessRouteType `json:"access_route_type"`
-	SurgeonBreakdown      SurgeonBreakdown `json:"surgeon_breakdown"`
-	LeadSurgeonFee        float64          `json:"lead_surgeon_fee"`
-	IndividualAuxFees     []AuxiliaryFee   `json:"individual_auxiliary_fees"`
-	AuxiliariesFee        float64          `json:"auxiliaries_fee"`
-	AnesthesiologistFee   float64          `json:"anesthesiologist_fee"`
-	FinalTotal            float64          `json:"final_total"`
-	TotalBase             float64          `json:"total_base"`
+	CreatedAt             time.Time       `json:"created_at"`
+}
+
+// SavedCalculation is returned by GET /api/calculations/{id}.
+// CalculationBreakdown is the original CalculateResponse JSON, preserved verbatim for auditing.
+// The internal database primary key is never included in this response.
+type SavedCalculation struct {
+	PublicID              string          `json:"public_id"`
+	ProcedureName         string          `json:"procedure_name"`
+	ProcedureSBNCode      string          `json:"procedure_sbn_code,omitempty"`
+	SelectedCBHPMCodes    []SelectedCode  `json:"selected_cbhpm_codes"`
+	AccessRouteType       AccessRouteType `json:"access_route_type"`
+	AuxiliariesCount      int             `json:"auxiliaries_count"`
+	RequiresAnesthesia    bool            `json:"requires_anesthesia"`
+	SurgeonValue          float64         `json:"surgeon_value"`
+	AuxiliariesTotalValue float64         `json:"auxiliaries_total_value"`
+	AnesthesiologistValue float64         `json:"anesthesiologist_value"`
+	TeamTotalValue        float64         `json:"team_total_value"`
+	CalculationBreakdown  json.RawMessage `json:"calculation_breakdown"`
+	CreatedAt             time.Time       `json:"created_at"`
 }

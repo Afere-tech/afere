@@ -9,7 +9,7 @@ import (
 )
 
 // makeGetProcedureHandler handles GET /api/procedures/{id}.
-func makeGetProcedureHandler(repo repository.ProcedureRepository) http.HandlerFunc {
+func makeGetProcedureHandler(repo repository.Repository) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if r.Method != http.MethodGet {
 			http.Error(w, "method not allowed", http.StatusMethodNotAllowed)

@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.1.0
 info:
   title: Afere API
-  version: 3.0.0
+  version: 3.1.0
   description: >
     Composition-builder API for the Afere medical procedure valuation platform.
     Implements CBHPM 2022 items 4.1, 4.2, and 5.1 for correct multi-procedure
@@ -100,6 +100,55 @@ paths:
                 $ref: '#/components/schemas/CalculateResponse'
         '400':
           description: Invalid request body.
+
+  /api/calculations:
+    post:
+      summary: Persist a completed calculation
+      description: >
+        Saves a completed valuation to the database. The request must include a
+        calculation_result with lead_surgeon_fee > 0 to ensure only real valuations
+        are persisted. Returns the public_id for the shareable URL.
+      operationId: saveCalculation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SaveCalculationRequest'
+      responses:
+        '201':
+          description: Calculation saved. Returns the public_id for URL construction.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SaveCalculationResponse'
+        '400':
+          description: Validation error (missing fields or incomplete valuation).
+
+  /api/calculations/{id}:
+    get:
+      summary: Retrieve a saved calculation by public ID
+      description: >
+        Returns the full saved calculation identified by its public UUID.
+        The internal database primary key is never exposed.
+      operationId: getCalculation
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+          description: Public UUID of the saved calculation (from SaveCalculationResponse.public_id).
+      responses:
+        '200':
+          description: Saved calculation detail.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SavedCalculation'
+        '404':
+          description: Calculation not found.
 
 components:
   schemas:
@@ -302,3 +351,86 @@ components:
           type: number
           format: float
           description: Simple sum of all selected code porte values (before discounting). Retained for compatibility.
+
+    SaveCalculationRequest:
+      type: object
+      required: [procedure_name, selected_codes, auxiliaries_count, requires_anesthesia, access_route_type, calculation_result]
+      properties:
+        procedure_name:
+          type: string
+          minLength: 1
+          description: SBN procedure name as displayed to the physician.
+        procedure_sbn_code:
+          type: string
+          description: SBN catalog ID (optional; used for future cross-referencing).
+        selected_codes:
+          type: array
+          minItems: 1
+          items:
+            $ref: '#/components/schemas/SelectedCode'
+        auxiliaries_count:
+          type: integer
+          minimum: 0
+          maximum: 4
+        requires_anesthesia:
+          type: boolean
+        access_route_type:
+          $ref: '#/components/schemas/AccessRouteType'
+        calculation_result:
+          $ref: '#/components/schemas/CalculateResponse'
+          description: The completed valuation result. lead_surgeon_fee must be > 0.
+
+    SaveCalculationResponse:
+      type: object
+      required: [public_id, created_at]
+      description: >
+        Only the public_id is returned. Use it to construct the shareable URL:
+        https://afere.app/calc/{public_id}
+      properties:
+        public_id:
+          type: string
+          format: uuid
+          description: UUID v4 public identifier for this calculation. Never the internal DB primary key.
+        created_at:
+          type: string
+          format: date-time
+
+    SavedCalculation:
+      type: object
+      required: [public_id, procedure_name, selected_cbhpm_codes, access_route_type, auxiliaries_count, requires_anesthesia, surgeon_value, auxiliaries_total_value, anesthesiologist_value, team_total_value, calculation_breakdown, created_at]
+      description: The full saved calculation. The internal DB primary key is never included.
+      properties:
+        public_id:
+          type: string
+          format: uuid
+        procedure_name:
+          type: string
+        procedure_sbn_code:
+          type: string
+        selected_cbhpm_codes:
+          type: array
+          items:
+            $ref: '#/components/schemas/SelectedCode'
+        access_route_type:
+          $ref: '#/components/schemas/AccessRouteType'
+        auxiliaries_count:
+          type: integer
+        requires_anesthesia:
+          type: boolean
+        surgeon_value:
+          type: number
+          format: float
+        auxiliaries_total_value:
+          type: number
+          format: float
+        anesthesiologist_value:
+          type: number
+          format: float
+        team_total_value:
+          type: number
+          format: float
+        calculation_breakdown:
+          description: Original CalculateResponse JSON preserved verbatim for auditing.
+        created_at:
+          type: string
+          format: date-time

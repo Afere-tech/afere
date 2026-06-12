@@ -2,6 +2,7 @@
 
 import {
   Activity,
+  BookmarkCheck,
   Calculator,
   Check,
   HeartPulse,
@@ -86,6 +87,9 @@ function ProcedureContent({ initialQuery, initialSbnId, initialRoute }: {
 
   const [calculation, setCalculation] = useState<CalculationResult | null>(null);
   const [copied, setCopied] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [savedCalc, setSavedCalc] = useState<{ publicId: string; savedAt: string } | null>(null);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   const calcTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -105,6 +109,21 @@ function ProcedureContent({ initialQuery, initialSbnId, initialRoute }: {
     }
     return codes;
   }, [selectedProcedures, detailsMap]);
+
+  // CBHPM 5.2: auxiliary count is determined by the highest num_auxiliaries
+  // among checked codes. When > 0, the manual mandates the value — lock the UI.
+  const cbhpmMandatedAux = useMemo(() => {
+    const checked = allCbhpmCodes.filter((c) => selectedCodes.has(c.code));
+    if (checked.length === 0) return 0;
+    return Math.max(0, ...checked.map((c) => c.num_auxiliaries));
+  }, [allCbhpmCodes, selectedCodes]);
+
+  const auxIsLocked = cbhpmMandatedAux > 0;
+
+  // Sync auxiliariesCount to the mandated value whenever it changes to > 0
+  useEffect(() => {
+    if (cbhpmMandatedAux > 0) setAuxiliariesCount(cbhpmMandatedAux);
+  }, [cbhpmMandatedAux]);
 
   const loadingDetail = loadingIds.size > 0;
 
@@ -227,6 +246,54 @@ function ProcedureContent({ initialQuery, initialSbnId, initialRoute }: {
 
     return () => { if (calcTimer.current) clearTimeout(calcTimer.current); };
   }, [buildCalculatePayload]);
+
+  // Reset saved/error state when the calculation changes
+  useEffect(() => { setSavedCalc(null); setSaveError(null); }, [calculation]);
+
+  // ── Save ──────────────────────────────────────────────────────────────────
+
+  const handleSave = useCallback(async () => {
+    if (!calculation || selectedProcedures.length === 0) return;
+    setSaving(true);
+    setSaveError(null);
+    try {
+      const checkedCodes = allCbhpmCodes.filter((c) => selectedCodes.has(c.code));
+      const payload = {
+        procedure_name: selectedProcedures.map((p) => p.name).join(" + "),
+        procedure_sbn_code: selectedProcedures[0].id,
+        selected_codes: checkedCodes.map((c) => ({
+          cbhpm_code: c.code,
+          description: c.description,
+          porte: c.porte,
+        })),
+        auxiliaries_count: auxiliariesCount,
+        requires_anesthesia: requiresAnesthesia,
+        access_route_type: accessRoute,
+        calculation_result: calculation,
+      };
+      const res = await fetch("/api/calculations", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        const data: { public_id: string; created_at: string } = await res.json();
+        const formatted = new Date(data.created_at).toLocaleDateString("pt-BR", {
+          day: "2-digit",
+          month: "2-digit",
+          year: "numeric",
+        });
+        setSavedCalc({ publicId: data.public_id, savedAt: formatted });
+
+      } else {
+        setSaveError("Não foi possível salvar. Tente novamente.");
+      }
+    } catch {
+      setSaveError("Erro de conexão. Verifique a rede e tente novamente.");
+    } finally {
+      setSaving(false);
+    }
+  }, [calculation, selectedProcedures, allCbhpmCodes, selectedCodes, auxiliariesCount, requiresAnesthesia, accessRoute]);
 
   // ── Share ─────────────────────────────────────────────────────────────────
 
@@ -457,20 +524,33 @@ function ProcedureContent({ initialQuery, initialSbnId, initialRoute }: {
               {/* Auxiliaries + anesthesia */}
               <div className="mb-4 grid gap-3 sm:grid-cols-2">
                 <div>
-                  <label className="mb-2 block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500 dark:text-slate-400">
-                    Número de Auxiliares
-                  </label>
+                  <div className="mb-2 flex items-center gap-2">
+                    <label className="block text-xs font-semibold uppercase tracking-[0.4px] text-slate-500 dark:text-slate-400">
+                      Número de Auxiliares
+                    </label>
+                    {auxIsLocked && (
+                      <span className="rounded-md bg-primary/10 px-1.5 py-px text-[9px] font-bold uppercase tracking-wide text-primary dark:bg-teal-300/10 dark:text-teal-300">
+                        Definido pelo CBHPM
+                      </span>
+                    )}
+                  </div>
                   <div className="flex flex-wrap gap-1.5">
                     {[0, 1, 2, 3, 4].map((n) => (
                       <button
                         key={n}
                         type="button"
-                        onClick={() => setAuxiliariesCount(n)}
+                        onClick={() => { if (!auxIsLocked) setAuxiliariesCount(n); }}
+                        disabled={auxIsLocked}
+                        aria-disabled={auxIsLocked}
                         className={cn(
                           "h-9 w-9 rounded-xl border text-sm font-semibold transition-colors",
-                          auxiliariesCount === n
-                            ? "border-primary bg-primary text-white dark:border-teal-400 dark:bg-teal-600"
-                            : "border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-primary/40",
+                          auxIsLocked
+                            ? auxiliariesCount === n
+                              ? "border-primary bg-primary text-white dark:border-teal-400 dark:bg-teal-600 cursor-default"
+                              : "border-slate-100 dark:border-slate-800 text-slate-300 dark:text-slate-600 cursor-not-allowed"
+                            : auxiliariesCount === n
+                              ? "border-primary bg-primary text-white dark:border-teal-400 dark:bg-teal-600"
+                              : "border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-primary/40",
                         )}
                       >
                         {n}
@@ -656,14 +736,42 @@ function ProcedureContent({ initialQuery, initialSbnId, initialRoute }: {
               </div>
 
               {canShare && (
-                <button
-                  id="share-calculation-btn"
-                  onClick={shareCalculation}
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/25 px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/5 active:scale-[0.98] dark:border-teal-300/20 dark:text-teal-300"
-                  type="button"
-                >
-                  {copied ? <><Check size={16} /> Link copiado!</> : <><Share2 size={16} /> Compartilhar cálculo</>}
-                </button>
+                <div className="mt-4 flex flex-col gap-2">
+                  <button
+                    id="share-calculation-btn"
+                    onClick={shareCalculation}
+                    className="flex w-full items-center justify-center gap-2 rounded-2xl border border-primary/25 px-4 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/5 active:scale-[0.98] dark:border-teal-300/20 dark:text-teal-300"
+                    type="button"
+                  >
+                    {copied ? <><Check size={16} /> Link copiado!</> : <><Share2 size={16} /> Compartilhar cálculo</>}
+                  </button>
+
+                  {!savedCalc ? (
+                    <>
+                      <button
+                        onClick={handleSave}
+                        disabled={saving}
+                        className="flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-200 dark:border-slate-700 px-4 py-3 text-sm font-semibold text-slate-600 dark:text-slate-300 transition-all hover:bg-slate-50 dark:hover:bg-slate-800/50 active:scale-[0.98] disabled:opacity-50"
+                        type="button"
+                      >
+                        {saving
+                          ? <><div className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent" /> Salvando...</>
+                          : <><BookmarkCheck size={16} /> Salvar cálculo</>}
+                      </button>
+                      {saveError && (
+                        <div className="flex items-center gap-2 rounded-2xl border border-red-200 dark:border-red-800/40 bg-red-50/70 dark:bg-red-900/15 px-4 py-3 text-sm font-medium text-red-600 dark:text-red-400">
+                          <X size={15} />
+                          {saveError}
+                        </div>
+                      )}
+                    </>
+                  ) : (
+                    <div className="flex items-center justify-center gap-2 rounded-2xl border border-emerald-200 dark:border-emerald-700/40 bg-emerald-50/70 dark:bg-emerald-900/15 px-4 py-3 text-sm font-semibold text-emerald-700 dark:text-emerald-400">
+                      <Check size={16} />
+                      Cálculo salvo com sucesso
+                    </div>
+                  )}
+                </div>
               )}
 
               <div className="mt-4 flex items-start gap-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-800/50 p-3">

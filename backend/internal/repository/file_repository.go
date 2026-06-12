@@ -4,7 +4,10 @@ import (
 	"embed"
 	"encoding/json"
 	"log"
+	"sort"
 	"strings"
+	"sync"
+	"time"
 
 	"afere/backend/internal/models"
 )
@@ -21,14 +24,17 @@ type flatEntry struct {
 	NumAuxiliaries int    `json:"num_auxiliaries"`
 }
 
-// FileRepository is a ProcedureRepository backed by the embedded procedures.json.
-// It groups the flat catalog by procedure name at startup, producing a stable
-// in-memory index of SBN procedures and their CBHPM code lists.
+// FileRepository is a Repository backed by the embedded procedures.json
+// and an in-memory calculation store (suitable for development and testing).
 type FileRepository struct {
 	// procedures is the ordered list of unique SBN procedures.
 	procedures []models.ProcedureWithCodes
 	// byID is a fast O(1) lookup from string ID → index.
 	byID map[string]int
+
+	// calcMu guards the in-memory calculation store.
+	calcMu       sync.RWMutex
+	calculations map[string]*models.Calculation // keyed by public_id
 }
 
 // NewFileRepository loads and indexes procedures.json. It panics on data corruption
@@ -87,7 +93,11 @@ func buildIndex(flat []flatEntry) *FileRepository {
 		byID[id] = i
 	}
 
-	return &FileRepository{procedures: procedures, byID: byID}
+	return &FileRepository{
+		procedures:   procedures,
+		byID:         byID,
+		calculations: make(map[string]*models.Calculation),
+	}
 }
 
 // Search returns up to 20 SBN procedures matching the query.
@@ -166,4 +176,77 @@ func idFromIndex(i int) string {
 		n /= 10
 	}
 	return string(buf)
+}
+
+// SaveCalculation stores the calculation in the in-memory map and returns the
+// populated record. This satisfies the Repository interface for development
+// and testing; data does not survive process restarts.
+func (r *FileRepository) SaveCalculation(calc models.Calculation) (*models.Calculation, error) {
+	publicID, err := models.GeneratePublicID()
+	if err != nil {
+		return nil, err
+	}
+	now := time.Now().UTC()
+	calc.ID = "file-" + publicID
+	calc.PublicID = publicID
+	calc.CreatedAt = now
+	calc.UpdatedAt = now
+
+	r.calcMu.Lock()
+	r.calculations[publicID] = &calc
+	r.calcMu.Unlock()
+
+	result := calc
+	return &result, nil
+}
+
+// ListCalculations returns all in-memory calculations ordered newest-first.
+func (r *FileRepository) ListCalculations() ([]models.CalculationSummary, error) {
+	r.calcMu.RLock()
+	defer r.calcMu.RUnlock()
+
+	summaries := make([]models.CalculationSummary, 0, len(r.calculations))
+	for _, c := range r.calculations {
+		summaries = append(summaries, models.CalculationSummary{
+			PublicID:              c.PublicID,
+			ProcedureName:         c.ProcedureName,
+			ProcedureSBNCode:      c.ProcedureSBNCode,
+			SurgeonValue:          c.SurgeonValue,
+			AuxiliariesTotalValue: c.AuxiliariesTotalValue,
+			AnesthesiologistValue: c.AnesthesiologistValue,
+			TeamTotalValue:        c.TeamTotalValue,
+			AuxiliariesCount:      c.AuxiliariesCount,
+			RequiresAnesthesia:    c.RequiresAnesthesia,
+			AccessRoute:           c.AccessRoute,
+			CreatedAt:             c.CreatedAt,
+		})
+	}
+	sort.Slice(summaries, func(i, j int) bool {
+		return summaries[i].CreatedAt.After(summaries[j].CreatedAt)
+	})
+	return summaries, nil
+}
+
+// GetCalculationByPublicID returns the in-memory calculation or nil if not found.
+func (r *FileRepository) GetCalculationByPublicID(publicID string) (*models.Calculation, error) {
+	r.calcMu.RLock()
+	c, ok := r.calculations[publicID]
+	r.calcMu.RUnlock()
+	if !ok {
+		return nil, nil
+	}
+	result := *c
+	return &result, nil
+}
+
+// DeleteCalculationByPublicID removes the calculation from the in-memory store.
+// Returns (true, nil) when deleted, (false, nil) when not found.
+func (r *FileRepository) DeleteCalculationByPublicID(publicID string) (bool, error) {
+	r.calcMu.Lock()
+	defer r.calcMu.Unlock()
+	if _, ok := r.calculations[publicID]; !ok {
+		return false, nil
+	}
+	delete(r.calculations, publicID)
+	return true, nil
 }

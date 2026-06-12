@@ -13,7 +13,7 @@ import (
 func main() {
 	cfg := config.Load()
 
-	var repo repository.ProcedureRepository
+	var repo repository.Repository
 
 	if cfg.DatabaseURL != "" {
 		pgRepo, err := repository.NewPostgresRepository(context.Background(), cfg.DatabaseURL)

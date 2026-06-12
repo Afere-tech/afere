@@ -1,6 +1,13 @@
 // Package models defines the core domain types for the Afere platform.
 package models
 
+import (
+	"crypto/rand"
+	"encoding/json"
+	"fmt"
+	"time"
+)
+
 // SBNProcedure represents a procedure package as defined in the SBN manual.
 // One SBN procedure aggregates one or more CBHPM codes.
 type SBNProcedure struct {
@@ -78,4 +85,55 @@ type CalculationResult struct {
 	AnesthesiologistFee float64
 	FinalTotal          float64
 	TotalBase           float64
+}
+
+// Calculation is a persisted valuation record.
+// BreakdownJSON holds the full CalculateResponse JSON for audit purposes.
+// The schema is designed for a future Calculation → User foreign key (migration 006).
+type Calculation struct {
+	ID                    string
+	PublicID              string
+	ProcedureName         string
+	ProcedureSBNCode      string
+	SelectedCBHPMCodes    []SelectedCode
+	AccessRoute           AccessRouteType
+	AuxiliariesCount      int
+	RequiresAnesthesia    bool
+	SurgeonValue          float64
+	AuxiliariesTotalValue float64
+	AnesthesiologistValue float64
+	TeamTotalValue        float64
+	BreakdownJSON         json.RawMessage
+	CreatedAt             time.Time
+	UpdatedAt             time.Time
+}
+
+// CalculationSummary is a lightweight projection of Calculation used in list responses.
+// It omits selected codes and the full breakdown JSON to keep list payloads small.
+type CalculationSummary struct {
+	PublicID              string
+	ProcedureName         string
+	ProcedureSBNCode      string
+	SurgeonValue          float64
+	AuxiliariesTotalValue float64
+	AnesthesiologistValue float64
+	TeamTotalValue        float64
+	AuxiliariesCount      int
+	RequiresAnesthesia    bool
+	AccessRoute           AccessRouteType
+	CreatedAt             time.Time
+}
+
+// GeneratePublicID returns a UUID v4 string for use in public-facing URLs
+// (e.g. /calc/7f3a9e2c-5c3d-4f35-a8db-1f6f8c3d7e11).
+// The internal database primary key is separate; only public_id is ever exposed externally.
+func GeneratePublicID() (string, error) {
+	var uuid [16]byte
+	if _, err := rand.Read(uuid[:]); err != nil {
+		return "", fmt.Errorf("generate public id: %w", err)
+	}
+	uuid[6] = (uuid[6] & 0x0f) | 0x40 // version 4
+	uuid[8] = (uuid[8] & 0x3f) | 0x80 // variant bits (RFC 4122)
+	return fmt.Sprintf("%08x-%04x-%04x-%04x-%012x",
+		uuid[0:4], uuid[4:6], uuid[6:8], uuid[8:10], uuid[10:16]), nil
 }

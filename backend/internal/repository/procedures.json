@@ -3,4572 +3,5334 @@
     "procedure_name": "CONSULTA GERAL - CRÂNIO",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA GERAL - CRÂNIO",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
-    "porte": "1C"
+    "porte": "1C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA GERAL - CRÂNIO",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA + PUNÇÃO LOMBAR",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA + PUNÇÃO LOMBAR",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA + PUNÇÃO LOMBAR",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "PROGRAMAÇÃO DE ELETRODO PARA NEUROESTIMULAÇÃO",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "PROGRAMAÇÃO DE ELETRODO PARA NEUROESTIMULAÇÃO",
     "cbhpm_code": "2.01.01.20-1",
     "description": "Avaliação clínica e eletrônica de paciente com marca-passo",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "PROGRAMAÇÃO DE ELETRODO PARA NEUROESTIMULAÇÃO",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "INFILTRAÇÃO PONTO-GATILHO OU AGULHAMENTO SECO",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "INFILTRAÇÃO PONTO-GATILHO OU AGULHAMENTO SECO",
     "cbhpm_code": "2.01.03.30-1",
     "description": "Infiltração de ponto-gatilho ou agulhamento seco (por musculo)",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "INFILTRAÇÃO PONTO-GATILHO OU AGULHAMENTO SECO",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA DE RETORNO POS-OPERATÓRIO + CURATIVO",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA DE RETORNO POS-OPERATÓRIO + CURATIVO",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA GERAL DE COLUNA VERTEBRAL",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA GERAL DE COLUNA VERTEBRAL",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
     "cbhpm_code": "3.02.07.22-3",
     "description": "Tratamento conservador de fratura de ossos",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CONSULTA: FRATURA DE COLUNA VERTEBRAL",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
-    "porte": "1C"
+    "porte": "1C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO I (TCE, hipertensão intracraniana, hemorragias, abcesso)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
-    "porte": "1C"
+    "porte": "1C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "3.02.07.22-3",
     "description": "Tratamento conservador de fratura de ossos",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA I (Patologias Não Traumáticas da Coluna)",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna na Emergência",
     "cbhpm_code": "2.01.03.30-1",
     "description": "Infiltração de ponto-gatilho (por região muscular)",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "3.07.15.34-2",
     "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "3.07.15.15-6",
     "description": "Fratura e/ou luxação da coluna vertebral – redução incruenta",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA III (Patologias Traumáticas/TRM da Coluna) Vertebral",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
     "cbhpm_code": "3.07.15.34-2",
     "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER - COLUNA IV (TRM CERVICAL) + TRAÇÃO CERVICAL",
     "cbhpm_code": "3.07.15.29-6",
     "description": "Tração cervical trans-esquelética",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RESPOSTA DE PARECER + PUNÇÃO LOMBAR",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER + PUNÇÃO LOMBAR",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RESPOSTA DE PARECER + PUNÇÃO LOMBAR",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DE PÓS-OPERATÓRIO",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DE PÓS-OPERATÓRIO",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
-    "porte": "1C"
+    "porte": "1C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DE PÓS-OPERATÓRIO",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DE PÓS-OPERATÓRIO",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "4.13.01.07-2",
     "description": "Campimetria manual - monocular",
-    "porte": "1C"
+    "porte": "1C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) - binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR DIÁRIA - CRÂNIO I (Tratamento conservador de TCE, hipertensão intracraniana, hemorr)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - CRÂNIO II (TCE + Fratura de crânio)",
     "cbhpm_code": "3.02.07.22-3",
     "description": "Tratamento conservador de fratura de ossos",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA I (Patologias Não Traumáticas)",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA I (Patologias Não Traumáticas)",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "3.07.15.23-7",
     "description": "Outras afecções da coluna – tratamento incruento",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "2.01.03.30-1",
     "description": "Infiltração de ponto-gatilho (por região muscular)",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA II (Patologias Não Traumáticas) + Infiltração Coluna",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA III (Patologias Traumáticas/TRM da Coluna)",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA III (Patologias Traumáticas/TRM da Coluna)",
     "cbhpm_code": "3.07.15.34-2",
     "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR - COLUNA III (Patologias Traumáticas/TRM da Coluna)",
     "cbhpm_code": "3.07.15.15-6",
     "description": "Fratura e/ou luxação da coluna vertebral – redução incruenta",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "VISITA HOSPITALAR + PUNÇÃO LIQUÓRICA",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR + PUNÇÃO LIQUÓRICA",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR + PUNÇÃO LIQUÓRICA",
     "cbhpm_code": "2.01.04.10-3",
     "description": "Curativos em geral sem anestesia",
-    "porte": "1A"
+    "porte": "1A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR: ACOMPANHAMENTO DE CATETER PERIDURAL",
     "cbhpm_code": "1.01.02.01-9",
     "description": "Visita hospitalar a paciente internado",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "VISITA HOSPITALAR: ACOMPANHAMENTO DE CATETER PERIDURAL",
     "cbhpm_code": "3.16.02.02-9",
     "description": "Analgesia p/ dia subsequente, acompanhamento de analgesia por cateter peridural",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CATETER DE PIC",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CATETER DE PIC",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CATETER DE PIC",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRICULAR EXTERNA DVE/PIC",
     "cbhpm_code": "3.14.01.05-8",
     "description": "Derivação Ventricular Externa",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRICULAR EXTERNA DVE/PIC",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRICULAR EXTERNA DVE/PIC",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRICULAR EXTERNA DVE/PIC",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBAR EXTERNA (DLE)",
     "cbhpm_code": "3.07.15.08-3",
     "description": "Derivação lombar externa",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBAR EXTERNA (DLE)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PERITONEAL (DVP)",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PERITONEAL (DVP)",
     "cbhpm_code": "3.10.09.17-4",
     "description": "Laparotomia exploradora",
-    "porte": "7A"
+    "porte": "7A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PERITONEAL (DVP)",
     "cbhpm_code": "3.10.08.06-2",
     "description": "Implante de cateter peritoneal",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-ATRIAL (DVA)",
     "cbhpm_code": "3.14.01.23-6",
     "description": "Sistema de derivação ventricular interna com válvula ou revisões",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-ATRIAL (DVA)",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-ATRIAL (DVA)",
     "cbhpm_code": "3.09.13.09-8",
     "description": "Dissecção de veia c/ colocação de cateter venoso",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-ATRIAL (DVA)",
     "cbhpm_code": "3.09.11.04-4",
     "description": "Cateterismo cardíaco direito e/ou esquerdo c/ ou s/ cineangiografia",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PLEURAL (DVPL)",
     "cbhpm_code": "3.14.01.23-6",
     "description": "Sistema de derivação ventricular interna com válvula ou revisões",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PLEURAL (DVPL)",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO VENTRÍCULO-PLEURAL (DVPL)",
     "cbhpm_code": "3.08.04.08-6",
     "description": "Punção pleural",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBO-PERITONEAL (DLP)",
     "cbhpm_code": "3.14.01.23-6",
     "description": "Sistema de derivação ventricular interna com válvula ou revisões",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBO-PERITONEAL (DLP)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBO-PERITONEAL (DLP)",
     "cbhpm_code": "3.10.09.17-4",
     "description": "Laparotomia exploradora",
-    "porte": "7A"
+    "porte": "7A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DERIVAÇÃO LOMBO-PERITONEAL (DLP)",
     "cbhpm_code": "3.10.08.06-2",
     "description": "Implante de cateter peritoneal",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.15.08-0",
     "description": "Tratamento cirúrgico da fratura do crânio/afundamento",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.09.05-6",
     "description": "Correção cirúrgica de depressão (afundamento) da região frontal",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.07.04-5",
     "description": "Redução de fratura do seio frontal (acesso coronal)",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.03.02.06-4",
     "description": "Fratura de órbita - redução cirúrgica",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão da órbita ou nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.15.02-1",
     "description": "Craniotomia descompressiva Ṫ",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA AFUNDAMENTO DE CRÂNIO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.09.05-6",
     "description": "Correção cirúrgica de depressão (afundamento) da região frontal",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.07.04-5",
     "description": "Redução de fratura do seio frontal (acesso coronal)",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.02-1",
     "description": "Craniotomia descompressiva Ṫ",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM DO HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.08-0",
     "description": "Tratamento cirúrgico da fratura do crânio/afundamento",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.09.05-6",
     "description": "Correção cirúrgica de depressão (afundamento) da região frontal",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.07.04-5",
     "description": "Redução de fratura do seio frontal (acesso coronal)",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.02-1",
     "description": "Craniotomia descompressiva Ṫ",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA FRATURA DE CRÂNIO + DRENAGEM DE HEMATOMA INTRACRANIANO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.03-1",
     "description": "Cirurgia Intracraniana por via endoscópica",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.05-8",
     "description": "Derivação Ventricular Externa",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.24-4",
     "description": "Terceiro Ventriculostomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM HEMATOMA INTRACRANIANO VIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.02.15.02-1",
     "description": "Craniotomia descompressiva",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOTOMIA DESCOMPRESSIVA",
     "cbhpm_code": "3.10.09.17-4",
     "description": "Laparotomia exploradora",
-    "porte": "7A"
+    "porte": "7A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "MUCOCELE FRONTAL - Ressecção Cirúrgica",
     "cbhpm_code": "3.14.01.20-1",
     "description": "Ressecção de mucocele frontal",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MUCOCELE FRONTAL - Ressecção Cirúrgica",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MUCOCELE FRONTAL - Ressecção Cirúrgica",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MUCOCELE FRONTAL - Ressecção Cirúrgica",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ABCESSO CEREBRAL - Drenagem Cirúrgica Aberta",
     "cbhpm_code": "3.14.01.29-5",
     "description": "Tratamento cirúrgico do abscesso encefálico",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ABCESSO CEREBRAL - Drenagem Cirúrgica Aberta",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ABCESSO CEREBRAL - Drenagem Cirúrgica Aberta",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ABCESSO CEREBRAL - Drenagem Cirúrgica Aberta",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "OSTEOMIELITE DE CRÂNIO - Tratamento Cirúrgico",
     "cbhpm_code": "3.02.15.09-9",
     "description": "Tratamento cirúrgico de Osteomielite de Crânio",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "OSTEOMIELITE DE CRÂNIO - Tratamento Cirúrgico",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal ",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "OSTEOMIELITE DE CRÂNIO - Tratamento Cirúrgico",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "OSTEOMIELITE DE CRÂNIO - Tratamento Cirúrgico",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "OSTEOMIELITE DE CRÂNIO - Tratamento Cirúrgico",
     "cbhpm_code": "3.07.15.27-0",
     "description": "Retirada de material de síntese ",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.09.06.43-1",
     "description": "Tratamento cirúrgico da isquemia cerebral",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.02.15.02-1",
     "description": "Craniotomia descompressiva",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.10.09.17-4",
     "description": "Laparotomia exploradora",
-    "porte": "7A"
+    "porte": "7A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "AVC ISQUÊMICO MALIGNO - Tratamento Cirúrgico",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "FÍSTULA LIQUÓRICA – CRÂNIO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "FÍSTULA LIQUÓRICA – CRÂNIO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica ",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOPLASTIA",
     "cbhpm_code": "3.02.15.01-3",
     "description": "Cranioplastia",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOPLASTIA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOPLASTIA",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOPLASTIA",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RETIRADA DE CORPO ESTRANHO DE CRÂNIO",
     "cbhpm_code": "3.14.01.04-0",
     "description": "Craniotomia para remoção de corpo estranho",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "RETIRADA DE CORPO ESTRANHO DE CRÂNIO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "RETIRADA DE CORPO ESTRANHO DE CRÂNIO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "RETIRADA DE CORPO ESTRANHO DE CRÂNIO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "Avaliação do Paciente Neurocrítico",
     "cbhpm_code": "1.01.04.01-1",
     "description": "Atendimento do intensivista diarista por dia",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Avaliação do Paciente Neurocrítico",
     "cbhpm_code": "4.13.01.20-0",
     "description": "Exame de motilidade ocular (teste ortóptico) – binocular",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Avaliação do Paciente Neurocrítico",
     "cbhpm_code": "2.02.01.08-7",
     "description": "Tratamento conservador de TCE, HIC e hemorragia (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Avaliação do Paciente Neurocrítico",
     "cbhpm_code": "3.07.15.34-2",
     "description": "Tratamento conservador do traumatismo raquimedular (por dia)",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Monitorização da Pressão Intracraniana (PIC)",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Eletroencefalografia (EEG)",
     "cbhpm_code": "4.01.03.20-0",
     "description": "EEG especial: terapia intensiva, morte encefálica, EEG prolongada",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Doppler Transcraniano (DTC)",
     "cbhpm_code": "4.09.01.60-2",
     "description": "Doppler Transcraniano",
-    "porte": "4A"
+    "porte": "4A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Ultrassom do Nervo Óptico (USNO)",
     "cbhpm_code": "4.15.01.06-3",
     "description": "Investigação ultrassônica com registro gráfico (qualquer área)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Ultrassom do Nervo Óptico (USNO)",
     "cbhpm_code": "4.09.01.01-7",
     "description": "Globo Ocular – Bilateral",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Monitorização da Pressão de Perfusão Cerebral (PPC)",
     "cbhpm_code": "2.02.02.03-2",
     "description": "Monitorização hemodinâmica invasiva por 12h",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Monitorização da Pressão de Perfusão Cerebral (PPC)",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Monitorização da Autorregulação Cerebral - Índice de Reatividade Cerebrovascular (PRx)",
     "cbhpm_code": "2.02.02.03-2",
     "description": "Monitorização hemodinâmica invasiva por 12h",
-    "porte": "2A"
+    "porte": "2A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Monitorização da Autorregulação Cerebral - Índice de Reatividade Cerebrovascular (PRx)",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "Implante Cateter Bulbo da Jugular",
     "cbhpm_code": "3.09.13.01-2",
     "description": "Implante de cateter venoso central por punção",
-    "porte": "4B"
+    "porte": "4B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "Implante cateter microdiálise cerebral",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "Implante cateter microdiálise cerebral",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "Hipotermia",
     "cbhpm_code": "3.09.16.01-1",
     "description": "Hipotermia profunda com ou sem parada ciruculatória total",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES GERAIS",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA ABERTA DE LESÕES DO ENCÉFALO",
     "cbhpm_code": "3.14.01.28-7",
     "description": "Tratamento cirúrgico de tumores cerebrais sem microscopia",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BIÓPSIA ABERTA DE LESÕES DO ENCÉFALO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BIÓPSIA ABERTA DE LESÕES DO ENCÉFALO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMOR ÓSSEO PARIETAL, FRONTAL, OCIPITAL",
     "cbhpm_code": "3.02.15.03-0",
     "description": "Craniotomia para tumores ósseos",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO PARIETAL, FRONTAL, OCIPITAL",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO PARIETAL, FRONTAL, OCIPITAL",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO TEMPORAL",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMOR ÓSSEO TEMPORAL",
     "cbhpm_code": "3.02.15.03-0",
     "description": "Craniotomia para tumores ósseos",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO TEMPORAL",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO TEMPORAL",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO TEMPORAL",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.03.02.13-7",
     "description": "Tumor de Órbita – Exérese",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão de órbita ou nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR ÓSSEO ORBITAL/ TEMPORAL",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES DA BASE CRÂNIO - ANTERIOR (Acesso Subfrontal)",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA BASE CRÂNIO - ANTERIOR (Acesso Subfrontal)",
     "cbhpm_code": "3.05.02.27-6",
     "description": "Sinusotomia Frontal via externa",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES DA BASE CRÂNIO - ANTERIOR (Acesso Subfrontal)",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA BASE CRÂNIO - ANTERIOR (Acesso Subfrontal)",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA BASE CRÂNIO - ANTERIOR (Acesso Subfrontal)",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.02.07.07-0",
     "description": "Fratura do arco zigomático - redução cirúrgica com fixação",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES BASE CRÂNIO- (Acesso Fronto-Órbito-Zigomático - FOZ)",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.03.02.09-9",
     "description": "Microcirurgia para tumores orbitários",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão de órbita ou nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DA ÓRBITA",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.04.04.05-3",
     "description": "Exploração e descompressão total do nervo facial (transmastóideo, translabiríntico, fossa média)",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO ÂNGULO PONTO-CEREBELAR (APC)",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO FORAME MAGNO",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO FORAME MAGNO",
     "cbhpm_code": "3.07.15.09-1",
     "description": "Descompressão medular e/ou cauda equina",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO FORAME MAGNO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO FORAME MAGNO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO FORAME MAGNO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.04.03.06-5",
     "description": "Glomus jugular - Ressecção",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.04.04.05-3",
     "description": "Exploração e descompressão total do nervo facial (transmastóideo, translabiríntico, fossa média)",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES DO GLOMUS JUGULAR",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO SUBLABIAL)",
     "cbhpm_code": "3.14.01.16-3",
     "description": "Microcirurgia por via Transesfenoidal",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO SUBLABIAL)",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão do nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO SUBLABIAL)",
     "cbhpm_code": "3.05.01.20-2",
     "description": "Fechamento de fístula liquórica transnasal",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO SUBLABIAL)",
     "cbhpm_code": "3.05.02.14-4",
     "description": "Maxilectomia parcial",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO SUBLABIAL)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico (por hora)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO TRANSNASAL)",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO TRANSNASAL)",
     "cbhpm_code": "3.14.01.16-3",
     "description": "Microcirurgia por via Transesfenoidal",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO TRANSNASAL)",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão do nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO TRANSNASAL)",
     "cbhpm_code": "3.05.01.20-2",
     "description": "Fechamento de fístula liquórica transnasal",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL TRADICIONAL (ACESSO TRANSNASAL)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirurgico (por hora)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA I",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA I",
     "cbhpm_code": "3.14.01.03-1",
     "description": "Cirurgia Intracraniana por via endoscópica",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA I",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão do nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA I",
     "cbhpm_code": "3.05.01.20-2",
     "description": "Fechamento de fístula liquórica transnasal",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.14.01.16-3",
     "description": "Microcirurgia por via Transesfenoidal",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.14.01.03-1",
     "description": "Cirurgia Intracraniana por via endoscópica",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.01.53-9",
     "description": "Septoplastia por videoendoscopia",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.01.45-8",
     "description": "Turbinectomia ou turbinoplastia - unilateral",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.02.34-9",
     "description": "Sinusotomia esfenoidal por videoendoscopia",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.02.32-2",
     "description": "Sinusectomia maxilar - via endonasal por videoendoscopia",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.02.31-4",
     "description": "Etmoidectomia intranasal por videoendoscopia ",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.03.02.09-9",
     "description": "Microcirurgia para tumores orbitários ",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão do nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "3.05.01.20-2",
     "description": "Fechamento de fístula liquórica transnasal",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA TRANSESFENOIDAL ENDOSCÓPICA II",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirurgico (por hora)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.02.07.07-0",
     "description": "Fratura do arco zigomático - redução cirúrgica com fixação",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV NÃO-ROTOS",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.24-4",
     "description": "Terceiro-ventriculostomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.05-8",
     "description": "Derivação Ventricular Externa ",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.08-2",
     "description": "Implante de cateter intracraniano ",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "2.02.02.06-7",
     "description": "Monitorização da pressão intracraniana",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.02.07.07-0",
     "description": "Fratura do arco zigomático - redução cirúrgica com fixação",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANEURISMA CEREBRAL ou MAV ROTOS",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ENDARTERECTOMIA DE CARÓTIDA",
     "cbhpm_code": "3.02.12.01-4",
     "description": "Cervicotomia exploradora",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENDARTERECTOMIA DE CARÓTIDA",
     "cbhpm_code": "3.09.06.19-9",
     "description": "Endarterectomia carotídea - cada segmento tratado",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "ENDARTERECTOMIA DE CARÓTIDA",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ENDARTERECTOMIA DE CARÓTIDA",
     "cbhpm_code": "3.09.06.21-0",
     "description": "Ligadura de carótidas ou ramos",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "MICROCIRURGIA PARA DESCOMPRESSÃO NEUROVASCULAR",
     "cbhpm_code": "3.14.04.01-4",
     "description": "Descompressão vascular de nervos cranianos",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MICROCIRURGIA PARA DESCOMPRESSÃO NEUROVASCULAR",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "MICROCIRURGIA PARA DESCOMPRESSÃO NEUROVASCULAR",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MICROCIRURGIA PARA DESCOMPRESSÃO NEUROVASCULAR",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MICROCIRURGIA PARA DESCOMPRESSÃO NEUROVASCULAR",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.09.06.43-1",
     "description": "Tratamento cirúrgico da isquemia cerebral",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.07.05.06-1",
     "description": "Autotransplante de outros retalhos, isolados entre si, e associados mediante um único pedículo vascular comuns aos retalhos",
-    "porte": "13A"
+    "porte": "13A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BYPASS INDIRETO",
     "cbhpm_code": "4.09.02.06-4",
     "description": "Doppler colorido intra-operatório",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.09.01.09-0",
     "description": "Redirecionamento do fluxo sanguíneo (com anastomose direta, retalho, tubo)",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.09.06.43-1",
     "description": "Tratamento cirúrgico da isquemia cerebral",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BYPASS DIRETO (ATS – ACM) – BAIXO FLUXO",
     "cbhpm_code": "4.09.02.06-4",
     "description": "Doppler colorido intra-operatório",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.09.01.09-0",
     "description": "Redirecionamento do fluxo sanguíneo (com anastomose direta, retalho, tubo)",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.09.06.43-1",
     "description": "Tratamento cirúrgico da isquemia cerebral",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.09.06.35-0",
     "description": "Pontes transcervicais – qualquer tipo",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.09.06.37-7",
     "description": "Preparo de veia autóloga para remendos vasculares",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "4.09.02.06-4",
     "description": "Doppler colorido intra-operatório",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (ACE – ACI) – ALTO FLUXO",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.09.01.09-0",
     "description": "Redirecionamento do fluxo sanguíneo (com anastomose direta, retalho, tubo)",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.14.01.17-1",
     "description": "Microcirurgia vascular intracraniana",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.09.06.43-1",
     "description": "Tratamento cirúrgico da isquemia cerebral",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.09.06.44-0",
     "description": "Tratamento cirúrgico de síndrome vértebro basilar",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.09.06.35-0",
     "description": "Pontes transcervicais – qualquer tipo",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.09.06.37-7",
     "description": "Preparo de veia autóloga para remendos vasculares",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "4.09.02.06-4",
     "description": "Doppler colorido intra-operatório",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BYPASS DIRETO (SISTEMA VÉRTEBRO BASILAR)",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 4 VASOS",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x6)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x6)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOGRAFIA CEREBRAL DE 6 VASOS",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.13.58-4",
     "description": "Embolização para tratamento de epistaxe",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EPISTAXE - TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.13.54-1",
     "description": "Embolização de aneurisma cerebral por oclusão sacular - por vaso",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.13.19-3",
     "description": "Colocação de stent em ramo intracraniano - por vaso ",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano ",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL NÃO-ROTO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.13.54-1",
     "description": "Embolização de aneurisma cerebral por oclusão sacular - por vaso",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "3.09.10.02-1",
     "description": "Aneurismas rotos ou trombosados – outros",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano ",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE ANEURISMA CEREBRAL ROTO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.56-8",
     "description": "Embolização de malformação arteriovenosa cerebral ou medular - por vaso",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.57-6",
     "description": "Embolização de fístula AV em cabeça, pescoço ou coluna -por vaso",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.54-1",
     "description": "Embolização de aneurisma cerebral por oclusão sacular - por vaso",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano ",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE MALFORMAÇÃO ARTERIOVENOSA (MAV)",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.13.57-6",
     "description": "Embolização de fístula AV em cabeça, pescoço ou coluna -p/ vaso",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.13.28-2",
     "description": "Colocação de stent para tratamento de fístula arterio-venosa",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.13.15-0",
     "description": "Angioplastia de tronco venoso",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral ",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO ENDOVASCULAR DE FÍSTULA ARTERIOVENOSA (FAV)",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.13.19-3",
     "description": "Colocação de stent em ramo intracraniano - por vaso",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE VASCULAR INTRACRANIANA",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso (valor x4)",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso (valor x4)",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOPLASTIA DO VASO ESPASMO INTRACRANIANO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.13.78-9",
     "description": "Embolização de tumor de cabeça e pescoço",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE TUMOR DE CABEÇA E PESCOÇO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.13.71-1",
     "description": "Embolização de fístula arterio-venosa não especificada",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.13.05-3",
     "description": "Alcoolização percutânea de angioma",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.10.02-0",
     "description": "Teste de oclusão de arteria carótida ou vertebral",
-    "porte": "7B"
+    "porte": "7B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ANGIOMA DE FACE – TRATAMENTO ENDOVASCULAR",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.13.80-0",
     "description": "Embolização de tumor ósseo ou de partes moles",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.13.81-9",
     "description": "Embolização de tumor não especificado",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "EMBOLIZAÇÃO DE CISTO ÓSSEO ANEURISMÁTICO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.13.07-0",
     "description": "Angioplastia de tronco supra-aortico",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.13.20-7",
     "description": "Colocação de stent em tronco supra-aortico",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTENOSE DE CARÓTIDA CERVICAL",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.13.19-3",
     "description": "Colocação de stent em ramo intracraniano - por vaso",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "3.09.11.09-5",
     "description": "Cateterismo e estudo cineangiográfico da aorta e/ou seus ramos",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.05-7",
     "description": "Angiografia por cateterismo super-seletivo de ramo secundário ou distal por vaso",
-    "porte": "5C"
+    "porte": "5C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.13.07-0",
     "description": "Angioplastia de tronco supra-aortico",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.13.06-1",
     "description": "Angioplastia de ramo intracraniano",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.13.20-7",
     "description": "Colocação de stent em tronco supra-aortico",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "3.09.10.08-0",
     "description": "Embolectomia ou trombolectomia arterial",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.14.04-1",
     "description": "Trombólise medicamentosa em troncos supra-aortico e intracranianos",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.04-9",
     "description": "Angiografia por cateterismo seletivo de ramo primário por vaso",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.03-0",
     "description": "Angiografia por cateterismo não seletivo de grande vaso",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.06-5",
     "description": "Angiografia trans-operatória de posicionamento",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.07-3",
     "description": "Angiografia pos-operatória de controle",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.12.02-2",
     "description": "Angiografia por punção",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "3.09.12.21-0",
     "description": "Retira percutânea de corpos estranhos vasculares",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TROMBECTOMIA MECÂNICA",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.01-5",
     "description": "Biópsia estereotaxica do encéfalo",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BIÓPSIA POR ESTEREOTAXIA",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.15-5",
     "description": "Microcirurgia para tumores intracranianos",
-    "porte": "14A"
+    "porte": "14A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "TUMORES COM LOCALIZAÇÃO POR ESTEREOTAXIA",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DRENAGEM POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM POR ESTEREOTAXIA",
     "cbhpm_code": "3.14.01.06-6",
     "description": "Drenagem estereotaxica – cistos, hematomas ou abcessos",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DRENAGEM POR ESTEREOTAXIA",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA I",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA II",
     "cbhpm_code": "3.14.01.25-2",
     "description": "Tratamento cirúrgico da epilepsia",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA II",
     "cbhpm_code": "4.01.03.27-7",
     "description": "Eletrocorticografia intra-operatoria (ECOG) – por hora de monitorização",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA II",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA II",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DA EPILEPSIA II",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Elétrica Vagal)",
     "cbhpm_code": "3.14.01.25-2",
     "description": "Tratamento cirúrgico da epilepsia",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Elétrica Vagal)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Elétrica Vagal)",
     "cbhpm_code": "3.02.12.01-4",
     "description": "Cervicotomia exploradora",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Elétrica Vagal)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Elétrica Vagal)",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervos (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.25-2",
     "description": "Tratamento cirúrgico da epilepsia",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.14-7",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.09-0",
     "description": "Implante de eletrodos cerebral profundo",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DA EPILEPSIA (Estimulação Cerebral Profunda)",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção ",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.01.09-0",
     "description": "Implante de eletrodos cerebral profundo",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Estimulação Cerebral Profunda)",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção ",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "3.14.03.16-6",
     "description": "Lesão estereotáxica de estruturas profundas para tratamento da dor, ou movimento anormal",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "3.14.01.09-0",
     "description": "Implante de eletrodos cerebral profundo",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "CIRURGIA DOS TRANSTORNOS DE MOVIMENTO (Método Ablativo)",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "3.14.01.35-0",
     "description": "Implante de halo para radiocirurgia",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "3.14.01.13-9",
     "description": "Localização estereotaxica de lesões intracranianas com remoção",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "3.14.03.16-6",
     "description": "Lesão estereotáxica de estruturas profundas para tratamento da dor, ou movimento anormal",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "3.14.01.09-0",
     "description": "Implante de eletrodos cerebral profundo",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "3.14.01.02-3",
     "description": "Cingulotomia ou capsulotomia unilateral",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO CIRÚRGICO DOS TRANSTORNOS DO COMPORTAMENTO",
     "cbhpm_code": "1.01.05.07-7",
     "description": "Acompanhamento médico para transporte intra-hospitalar",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
     "cbhpm_code": "3.14.04.03-0",
     "description": "Tratamento da neuralgia do trigêmeo por via percutânea",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO (Técnica percutânea com balão)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
     "cbhpm_code": "3.14.04.03-0",
     "description": "Tratamento da neuralgia do trigêmeo por via percutânea",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS I (Técnica percutânea de rizotomia)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
     "cbhpm_code": "3.14.04.03-0",
     "description": "Tratamento da neuralgia do trigêmeo por via percutânea",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
     "cbhpm_code": "3.16.02.13-4",
     "description": "Bloqueio neurolítico de nervos cranianos ou cervico-torácico",
-    "porte": "6B"
+    "porte": "6B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEURALGIA DO TRIGÊMEO E DEMAIS NERVOS CRANIANOS II (Técnica ablativa química)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
     "cbhpm_code": "3.14.02.01-1",
     "description": "Cordotomia-mielotomias por radiofrequência",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA I (Técnica cirurgia aberta)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
     "cbhpm_code": "3.14.02.01-1",
     "description": "Cordotomia-mielotomias por radiofrequência",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA II (Técnica percutânea)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "3.14.02.01-1",
     "description": "Cordotomia-mielotomias por radiofrequência",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "3.07.15.05-9",
     "description": "Cirurgia da coluna por via endoscópica",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TRATAMENTO DE DOR CRÔNICA POR CORDOTOMIA III (Técnica percutânea assistida)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DREZOTOMIA",
     "cbhpm_code": "3.14.02.02-0",
     "description": "Lesão de substância gelatinosa medular (DREZ) por radiofrequência",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DREZOTOMIA",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DREZOTOMIA",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DREZOTOMIA",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU DE NERVO PERIFÉRICO I (Técnica percutânea – Fase)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR E/OU NERVO PERIFÉRICO II (Técnica percutânea – Fase)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
     "cbhpm_code": "3.14.01.10-4",
     "description": "Implante de eletrodos medular ou cerebral",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
     "cbhpm_code": "3.14.03.14-0",
     "description": "Implante de gerador para neuroestimulação",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ESTIMULAÇÃO ELÉTRICA MEDULAR (Técnica por Laminectomia)",
     "cbhpm_code": "4.01.03.43-9",
     "description": "Impedanciometria",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RIZOTOMIA SELETIVA OU SUPERSELETIVA PARA ESPASTICIDADE",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "RIZOTOMIA SELETIVA OU SUPERSELETIVA PARA ESPASTICIDADE",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervos (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RIZOTOMIA SELETIVA OU SUPERSELETIVA PARA ESPASTICIDADE",
     "cbhpm_code": "3.14.03.21-2",
     "description": "Microneurólise intraneural ou intrafascicular de dois ou mais nervos",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RIZOTOMIA SELETIVA OU SUPERSELETIVA PARA ESPASTICIDADE",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RIZOTOMIA PERCUTANEA PARA ESPASTICIDADE",
     "cbhpm_code": "3.14.03.33-6",
     "description": "Rizotomia percutânea por segmento - qualquer método",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RIZOTOMIA PERCUTANEA PARA ESPASTICIDADE",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "NEUROTOMIA PERIFÉRICA PARA ESPASTICIDADE",
     "cbhpm_code": "3.14.03.21-2",
     "description": "Microneurólise intraneural ou intrafascicular de dois ou mais nervos",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROTOMIA PERIFÉRICA PARA ESPASTICIDADE",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervos (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BLOQUEIO DO GÂNGLIO ESTRELADO",
     "cbhpm_code": "3.14.05.01-0",
     "description": "Bloqueio do sistema nervoso autônomo",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BLOQUEIO DO GÂNGLIO ESTRELADO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
     "cbhpm_code": "3.16.02.13-4",
     "description": "Bloqueio Neurolítico de nervos cranianos ou cervico-toracico",
-    "porte": "6B"
+    "porte": "6B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
     "cbhpm_code": "3.14.05.01-0",
     "description": "Bloqueio do sistema nervoso autônomo",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DE NERVOS CRANIANOS OU CÉRVICO-TORÁCICO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "INFILTRAÇÃO DE COLUNA (DOR AXIAL E/OU RADICULAR)",
     "cbhpm_code": "4.08.13.36-3",
     "description": "Coluna vertebral: infiltração foraminal ou facetária ou articular",
-    "porte": "5A"
+    "porte": "5A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "INFILTRAÇÃO DE COLUNA (DOR AXIAL E/OU RADICULAR)",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RIZOTOMIA DE FACETAS POR MÉTODO QUÍMICO",
     "cbhpm_code": "3.14.03.33-6",
     "description": "Rizotomia percutâneo por segmento – qualquer método",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RIZOTOMIA DE FACETAS POR MÉTODO QUÍMICO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "RIZOTOMIA DE FACETAS POR RADIOFREQUÊNCIA",
     "cbhpm_code": "3.14.03.33-6",
     "description": "Rizotomia percutâneo por segmento – qualquer método",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "RIZOTOMIA DE FACETAS POR RADIOFREQUÊNCIA",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
     "cbhpm_code": "3.14.05.01-0",
     "description": "Bloqueio do sistema nervoso autônomo",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
     "cbhpm_code": "3.16.02.11-8",
     "description": "Bloqueio de nervo periférico",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO DO PLEXO CELÍACO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
     "cbhpm_code": "3.16.02.14-2",
     "description": "Bloqueio Neurolítico do plexo celíaco, simpático lombar ou torácico",
-    "porte": "6B"
+    "porte": "6B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
     "cbhpm_code": "3.16.02.11-8",
     "description": "Bloqueio de nervo periférico",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BLOQUEIO NEUROLÍTICO DO PLEXO CELÍACO E OUTROS NERVOS SIMPÁTICOS",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.07-0",
     "description": "Bloqueio anestésico simpático",
-    "porte": "4C"
+    "porte": "4C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.11-8",
     "description": "Bloqueio de nervo periférico",
-    "porte": "3B"
+    "porte": "3B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TESTE PARA IMPLANTE DE BOMBA DE INFUSÃO FÁRMACO INTRATECAL",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
     "cbhpm_code": "3.14.01.12-0",
     "description": "Implante intratecal de bombas para infusão de fármacos",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
     "cbhpm_code": "3.16.02.16-9",
     "description": "Bloqueio peridural ou subaracnóideo",
-    "porte": "6B"
+    "porte": "6B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BOMBA DE INFUSÃO DE FÁRMACO INTRATECAL",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REPOSIÇÃO DE FÁRMACO DE BOMBAS IMPLANTADAS",
     "cbhpm_code": "1.01.01.01-2",
     "description": "Em consultório (no horário normal ou preestabelecido)",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REPOSIÇÃO DE FÁRMACO DE BOMBAS IMPLANTADAS",
     "cbhpm_code": "3.14.03.30-1",
     "description": "Reposição de fármaco em bombas implantadas",
-    "porte": "1B"
+    "porte": "1B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REPOSIÇÃO DE FÁRMACO DE BOMBAS IMPLANTADAS",
     "cbhpm_code": "3.16.02.16-9",
     "description": "Bloqueio peridural ou subaracnóideo",
-    "porte": "6B"
+    "porte": "6B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REPOSIÇÃO DE FÁRMACO DE BOMBAS IMPLANTADAS",
     "cbhpm_code": "4.08.10.01-1",
     "description": "Mielografia",
-    "porte": "3A"
+    "porte": "3A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "3.14.03.32-8",
     "description": "Revisão de sistema implantados para infusão de fármacos",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "3.14.01.12-0",
     "description": "Implante intratecal de bombas para infusão de fármacos",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "3.07.15.25-3",
     "description": "Punção Liquórica",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "3.16.02.22-3",
     "description": "Passagem de Cateter peridural ou Subaracnoídeo c/ bloqueio de prova",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "3.14.05.01-0",
     "description": "Bloqueio do sistema nervoso autônomo",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "REVISÃO DE BOMBA DE INFUSÃO DE FÁRMACO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "REVISÃO DE SISTEMA DE NEUROESTIMULAÇÃO",
     "cbhpm_code": "3.14.01.22-8",
     "description": "Revisão de sistema de neuroestimulação",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "REVISÃO DE SISTEMA DE NEUROESTIMULAÇÃO",
     "cbhpm_code": "4.08.11.02-6",
     "description": "Radioscopia para acompanhamento de procedimento cirúrgico",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.14.01.27-9",
     "description": "Tratamento cirúrgico da meningoencefalocele",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.07.15.32-6",
     "description": "Tratamento cirúrgico das malformações craniovertebrais",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.55-7",
     "description": "Extensos ferimentos - exérese e rotação de retalho fasciocutaneo",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.67-0",
     "description": "Plástica em Z ou W",
-    "porte": "4A"
+    "porte": "4A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "ENCEFALOCELE: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.07.15.33-4",
     "description": "Tratamento cirúrgico do disrafismo",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.07.15.32-6",
     "description": "Tratamento cirúrgico das malformaçoes craniovertebrais",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.57-3",
     "description": "Extensos ferimentos - exérese e rotação de retalhos musculares",
-    "porte": "9A"
+    "porte": "9A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.55-7",
     "description": "Extensos ferimentos - exérese e rotação de retalho fasciocutaneo",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.67-0",
     "description": "Plástica em Z ou W",
-    "porte": "4A"
+    "porte": "4A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "DISRAFISMO ESPINHAL: TRATAMENTO CIRÚRGICO",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.07.15.33-4",
     "description": "Tratamento cirúrgico do disrafismo",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.07.15.19-9",
     "description": "Laminectomia ou laminotomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.07.15.09-1",
     "description": "Descompressão medular e/ou cauda equina",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.07.15.35-0",
     "description": "Tratamento microcirúrgico das lesões intramedulares (tumor, malformações arteriovenosa, siringomielia, parasitoses)",
-    "porte": "13B"
+    "porte": "13B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.14.03.22-0",
     "description": "Microneurólise múltipla",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "MEDULA PRESA: LIBERAÇÃO CIRÚRGICA",
     "cbhpm_code": "3.01.01.23-9",
     "description": "Curativo especial sob anestesia - por unidade topográfica (UT)",
-    "porte": "2C"
+    "porte": "2C",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "TERCEIROVENTRICULOSTOMIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.03-1",
     "description": "Cirurgia Intracraniana por via endoscópica",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TERCEIROVENTRICULOSTOMIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.24-4",
     "description": "Terceiro Ventriculostomia",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TERCEIROVENTRICULOSTOMIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.26-0",
     "description": "Tratamento cirúrgico da fístula liquórica",
-    "porte": "10C"
+    "porte": "10C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TERCEIROVENTRICULOSTOMIA ENDOSCÓPICA",
     "cbhpm_code": "3.14.01.30-9",
     "description": "Tratamento cirúrgico do hematoma intracraniano",
-    "porte": "10B"
+    "porte": "10B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOESTENOSE SIMPLES",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOESTENOSE SIMPLES",
     "cbhpm_code": "3.02.15.07-2",
     "description": "Tratamento cirúrgico da craniossinostose",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE SIMPLES",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "CRANIOESTENOSE SIMPLES",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE SIMPLES",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.02.15.04-8",
     "description": "Reconstrução craniana ou craniofacial",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.02.15.07-2",
     "description": "Tratamento cirúrgico da craniossinostose",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.04.04.12-6",
     "description": "Ressecção do osso temporal",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.02.10.10-0",
     "description": "Reconstrução com rotação do músculo temporal",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.03.02.02-1",
     "description": "Descompressão de órbita ou nervo óptico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.03.02.10-2",
     "description": "Reconstituição de paredes orbitárias",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "CRANIOESTENOSE COMPLEXA",
     "cbhpm_code": "3.01.01.68-9",
     "description": "Reconstrução com retalho da gálea aponeurótica",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "PUNÇÃO TRANSFONTANELA",
     "cbhpm_code": "1.01.01.03-9",
     "description": "Consulta em pronto-socorro",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "PUNÇÃO TRANSFONTANELA",
     "cbhpm_code": "3.14.01.19-8",
     "description": "Punção subdural ou transfontanela",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BIÓPSIA DE NERVO",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervo (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE NERVO",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE NERVO",
     "cbhpm_code": "3.14.03.20-4",
     "description": "Microneurólise intraneural ou intrafascicular de um nervo",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE NERVO",
     "cbhpm_code": "3.14.03.01-8",
     "description": "Biópsia de nervo",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE NERVO",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE MÚSCULO",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "BIÓPSIA DE MÚSCULO",
     "cbhpm_code": "3.03.11.01-2",
     "description": "Biópsia de músculo",
-    "porte": "2B"
+    "porte": "2B",
+    "num_auxiliaries": 0
   },
   {
     "procedure_name": "BIÓPSIA DE MÚSCULO",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.17-4",
     "description": "Microcirurgia do plexo braquial com exploração, Neurólise e enxertos interfasciculares para reparo das lesões",
-    "porte": "13A"
+    "porte": "13A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.26-3",
     "description": "Microneurorrafia múltipla (plexo nervoso)",
-    "porte": "12B"
+    "porte": "12B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.35-2",
     "description": "Transposição de nervo",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.15-8",
     "description": "Lesão de nervo associada a lesão óssea",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervo (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.31-0",
     "description": "Ressecção de neuroma",
-    "porte": "4A"
+    "porte": "4A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervo (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.20-4",
     "description": "Microneurólise intraneural ou intrafascicular de um nervo",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.31-0",
     "description": "Ressecção de neuroma",
-    "porte": "4A"
+    "porte": "4A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.07-7",
     "description": "Enxerto interfascicular de nervo vascularizado",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.27-1",
     "description": "Microneurorrafia única",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.14.03.15-8",
     "description": "Lesão de nervo associada a lesão óssea",
-    "porte": "8C"
+    "porte": "8C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "LESÃO TRAUMÁTICA DE NERVO PERIFÉRICO",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.14.05.03-7",
     "description": "Tratamento da síndrome do desfiladeiro torácico",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.07.15.07-5",
     "description": "Costela cervical – tratamento cirúrgico",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.14.03.36-0",
     "description": "Tratamento microcirúrgico das neuropatias compressivas (tumor, inflamatório, etc)",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.14.03.18-2",
     "description": "Microcirurgia do plexo braquial com exploração e neurólise",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "SÍNDROME DO DESFILADEIRO TORÁCICO",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.14.03.36-0",
     "description": "Tratamento microcirúrgico das neuropatias compressivas (tumor, inflamatório, etc)",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.07.37.07-9",
     "description": "Túnel do carpo – descompressão",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.14.03.28-0",
     "description": "Neurólise das neuropatias compressivas",
-    "porte": "6C"
+    "porte": "6C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.07.31.09-7",
     "description": "Tenólise túnel osteofibroso",
-    "porte": "6A"
+    "porte": "6A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.07.37.01-0",
     "description": "Sinovectomia total ** (endoscópica)",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NEUROPATIAS COMPRESSIVAS",
     "cbhpm_code": "3.07.36.01-3",
     "description": "Sinovectomia total *** (endoscópica)",
-    "porte": "9C"
+    "porte": "9C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.04.04.05-3",
     "description": "Exploração e descompressão total do nervo facial",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.04.04.03-7",
     "description": "Enxerto parcial infratemporal do nervo facial – do gânglio geniculado ao meato acústico interno",
-    "porte": "11B"
+    "porte": "11B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.04.04.04-5",
     "description": "Enxerto total do nervo facial infratemporal",
-    "porte": "11A"
+    "porte": "11A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.14.03.22-0",
     "description": "Microneurólise múltipla",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.14.03.27-1",
     "description": "Microneurorrafia única",
-    "porte": "8A"
+    "porte": "8A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.14.03.07-7",
     "description": "Enxerto interfascicular de nervo vascularizado",
-    "porte": "12C"
+    "porte": "12C",
+    "num_auxiliaries": 3
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.14.03.35-2",
     "description": "Transposição de nervo",
-    "porte": "10A"
+    "porte": "10A",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.02.10.05-4",
     "description": "Paralisia facial – reanimação com neurotização",
-    "porte": "11C"
+    "porte": "11C",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "NERVO FACIAL",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.14.03.10-7",
     "description": "Excisão de tumores de nervos periféricos com enxerto interfascicular",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.14.03.36-0",
     "description": "Tratamento microcirúrgico das neuropatias compressivas (tumor, inflamatório)",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.14.03.12-3",
     "description": "Exploração cirúrgica de nervo (Neurólise externa)",
-    "porte": "5B"
+    "porte": "5B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.14.03.20-4",
     "description": "Microneurólise intraneural ou intrafascicular de um nervo",
-    "porte": "7C"
+    "porte": "7C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DE NERVO",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.17-4",
     "description": "Microcirurgia do plexo braquial com exploração, Neurólise e enxertos interfasciculares para reparo das lesões",
-    "porte": "13A"
+    "porte": "13A",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.10-7",
     "description": "Excisão de tumores de nervos periféricos com enxerto interfascicular",
-    "porte": "9B"
+    "porte": "9B",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.14.03.36-0",
     "description": "Tratamento microcirúrgico das neuropatias compressivas (tumor, inflamatório)",
-    "porte": "8B"
+    "porte": "8B",
+    "num_auxiliaries": 2
   },
   {
     "procedure_name": "TUMOR DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.07.30.05-8",
     "description": "Dissecção muscular",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   },
   {
     "procedure_name": "TUMOR DO PLEXO BRAQUIAL",
     "cbhpm_code": "3.07.30.11-2",
     "description": "Miorrafias",
-    "porte": "3C"
+    "porte": "3C",
+    "num_auxiliaries": 1
   }
 ]
