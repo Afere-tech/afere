@@ -2,6 +2,7 @@
 
 import { BookmarkCheck, Search, Trash2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -418,6 +419,25 @@ function CompositionList({
   loaded: boolean;
   onDelete: (publicID: string) => void;
 }) {
+  const [pendingDelete, setPendingDelete] = useState<CompositionItem | null>(null);
+  const [deleting, setDeleting] = useState(false);
+
+  async function confirmDelete() {
+    if (!pendingDelete) return;
+    setDeleting(true);
+    try {
+      const res = await fetch(`/api/compositions/${pendingDelete.public_id}`, { method: "DELETE" });
+      if (res.ok || res.status === 404) {
+        onDelete(pendingDelete.public_id);
+        setPendingDelete(null);
+      }
+    } catch {
+      // leave item on network error
+    } finally {
+      setDeleting(false);
+    }
+  }
+
   if (!loaded) {
     return (
       <div style={{ textAlign: "center", padding: "40px 0" }}>
@@ -453,52 +473,49 @@ function CompositionList({
   }
 
   return (
-    <div>
-      <p style={{ margin: "0 0 14px", fontSize: "11.5px", fontWeight: 600, color: T.muted, letterSpacing: "0.2px" }}>
-        {compositions.length} composição{compositions.length !== 1 ? "ões" : ""} salva{compositions.length !== 1 ? "s" : ""}
-      </p>
-      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-        {compositions.map((comp) => (
-          <CompositionRow key={comp.public_id} comp={comp} onDelete={onDelete} />
-        ))}
+    <>
+      <div>
+        <p style={{ margin: "0 0 14px", fontSize: "11.5px", fontWeight: 600, color: T.muted, letterSpacing: "0.2px" }}>
+          {compositions.length} composição{compositions.length !== 1 ? "ões" : ""} salva{compositions.length !== 1 ? "s" : ""}
+        </p>
+        <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+          {compositions.map((comp) => (
+            <CompositionRow
+              key={comp.public_id}
+              comp={comp}
+              onRequestDelete={setPendingDelete}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+
+      {pendingDelete && (
+        <ConfirmDeleteDialog
+          composition={pendingDelete}
+          deleting={deleting}
+          onConfirm={confirmDelete}
+          onCancel={() => { if (!deleting) setPendingDelete(null); }}
+        />
+      )}
+    </>
   );
 }
 
 function CompositionRow({
   comp,
-  onDelete,
+  onRequestDelete,
 }: {
   comp: CompositionItem;
-  onDelete: (publicID: string) => void;
+  onRequestDelete: (comp: CompositionItem) => void;
 }) {
   const [hovered, setHovered] = useState(false);
   const [trashHovered, setTrashHovered] = useState(false);
-  const [deleting, setDeleting] = useState(false);
 
   const date = new Date(comp.created_at).toLocaleDateString("pt-BR", {
     day: "2-digit", month: "2-digit", year: "numeric",
   });
 
   const href = `/procedure?composition=${encodeURIComponent(comp.public_id)}`;
-
-  async function handleDelete(e: React.MouseEvent) {
-    e.preventDefault();
-    e.stopPropagation();
-    if (!window.confirm(`Apagar composição "${comp.name}"?`)) return;
-    setDeleting(true);
-    try {
-      const res = await fetch(`/api/compositions/${comp.public_id}`, { method: "DELETE" });
-      if (res.ok || res.status === 404) {
-        onDelete(comp.public_id);
-      }
-    } catch {
-      // leave item on network error
-    } finally {
-      setDeleting(false);
-    }
-  }
 
   return (
     <Link
@@ -556,8 +573,7 @@ function CompositionRow({
         <button
           type="button"
           aria-label="Remover composição"
-          disabled={deleting}
-          onClick={handleDelete}
+          onClick={(e) => { e.preventDefault(); e.stopPropagation(); onRequestDelete(comp); }}
           onMouseEnter={() => setTrashHovered(true)}
           onMouseLeave={() => setTrashHovered(false)}
           style={{
@@ -567,8 +583,7 @@ function CompositionRow({
             borderRadius: "7px",
             backgroundColor: trashHovered ? "#FFF1F1" : "transparent",
             color: trashHovered ? "#DC2626" : T.muted,
-            cursor: deleting ? "default" : "pointer",
-            opacity: deleting ? 0.5 : 1,
+            cursor: "pointer",
             transition: "background-color 120ms ease, border-color 120ms ease, color 120ms ease",
             flexShrink: 0, marginTop: "2px",
           }}
@@ -577,6 +592,134 @@ function CompositionRow({
         </button>
       </div>
     </Link>
+  );
+}
+
+// ─── Confirm delete dialog ────────────────────────────────────────────────────
+
+function ConfirmDeleteDialog({
+  composition,
+  deleting,
+  onConfirm,
+  onCancel,
+}: {
+  composition: CompositionItem;
+  deleting: boolean;
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) { if (e.key === "Escape") onCancel(); }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [onCancel]);
+
+  const [cancelHovered, setCancelHovered] = useState(false);
+  const [confirmHovered, setConfirmHovered] = useState(false);
+
+  return createPortal(
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="confirm-delete-title"
+      onClick={onCancel}
+      style={{
+        position: "fixed", inset: 0, zIndex: 999,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        padding: "20px",
+        backgroundColor: "rgba(15,23,42,0.42)",
+        backdropFilter: "blur(6px)",
+        WebkitBackdropFilter: "blur(6px)",
+        animation: "fadeIn 120ms ease",
+      }}
+    >
+      <div
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: "100%", maxWidth: "380px",
+          backgroundColor: "#FFFFFF",
+          borderRadius: "18px",
+          border: "1px solid rgba(226,232,240,0.9)",
+          padding: "28px 28px 24px",
+          boxShadow:
+            "0 4px 6px rgba(15,23,42,0.06), 0 12px 32px rgba(15,23,42,0.14), 0 32px 56px -8px rgba(15,23,42,0.10)",
+          animation: "slideUp 160ms cubic-bezier(0.16,1,0.3,1)",
+        }}
+      >
+        {/* Icon */}
+        <div style={{
+          width: "46px", height: "46px", borderRadius: "50%",
+          backgroundColor: "#FEF2F2", border: "1.5px solid #FECACA",
+          display: "flex", alignItems: "center", justifyContent: "center",
+          marginBottom: "18px",
+        }}>
+          <Trash2 size={20} aria-hidden="true" style={{ color: "#DC2626" }} />
+        </div>
+
+        {/* Title */}
+        <h2 id="confirm-delete-title" style={{
+          margin: "0 0 8px", fontSize: "16px", fontWeight: 700,
+          color: T.primary, letterSpacing: "-0.2px", lineHeight: 1.2,
+        }}>
+          Remover composição?
+        </h2>
+
+        {/* Body */}
+        <p style={{
+          margin: "0 0 26px", fontSize: "13.5px", lineHeight: 1.6,
+          color: T.secondary,
+        }}>
+          A composição{" "}
+          <span style={{ fontWeight: 700, color: T.primary }}>
+            &ldquo;{composition.name}&rdquo;
+          </span>{" "}
+          será removida permanentemente. Esta ação não pode ser desfeita.
+        </p>
+
+        {/* Buttons */}
+        <div style={{ display: "flex", gap: "8px" }}>
+          <button
+            type="button"
+            disabled={deleting}
+            onClick={onCancel}
+            onMouseEnter={() => setCancelHovered(true)}
+            onMouseLeave={() => setCancelHovered(false)}
+            style={{
+              flex: 1, height: "40px", borderRadius: "10px",
+              border: `1.5px solid ${cancelHovered ? "#CBD5E1" : "#E2E8F0"}`,
+              backgroundColor: cancelHovered ? "#F8FAFC" : "transparent",
+              color: T.secondary, fontSize: "13.5px", fontWeight: 600,
+              fontFamily: "inherit", cursor: deleting ? "default" : "pointer",
+              transition: "background-color 120ms ease, border-color 120ms ease",
+              opacity: deleting ? 0.5 : 1,
+            }}
+          >
+            Cancelar
+          </button>
+          <button
+            type="button"
+            disabled={deleting}
+            onClick={onConfirm}
+            onMouseEnter={() => setConfirmHovered(true)}
+            onMouseLeave={() => setConfirmHovered(false)}
+            style={{
+              flex: 1, height: "40px", borderRadius: "10px",
+              border: "none",
+              backgroundColor: deleting ? "#FCA5A5" : confirmHovered ? "#B91C1C" : "#DC2626",
+              color: "#FFFFFF", fontSize: "13.5px", fontWeight: 600,
+              fontFamily: "inherit", cursor: deleting ? "default" : "pointer",
+              transition: "background-color 120ms ease",
+              display: "flex", alignItems: "center", justifyContent: "center", gap: "6px",
+            }}
+          >
+            {deleting
+              ? <><span style={{ width: "13px", height: "13px", border: "2px solid rgba(255,255,255,0.4)", borderTopColor: "#fff", borderRadius: "50%", display: "inline-block", animation: "spin 0.7s linear infinite" }} /> Removendo...</>
+              : "Remover"}
+          </button>
+        </div>
+      </div>
+    </div>,
+    document.body
   );
 }
 
