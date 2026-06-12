@@ -177,9 +177,20 @@ export default function Home() {
     else if (e.key === "Escape") { setDropdownOpen(false); }
   }
 
-  function fillExample(ex: string) {
+  async function fillExample(ex: string) {
     setQuery(ex);
-    inputRef.current?.focus();
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    setSearching(true);
+    setDropdownOpen(false);
+    try {
+      const res = await fetch(`/api/procedures/search?q=${encodeURIComponent(ex)}`);
+      if (res.ok) {
+        const data: ProcedureHit[] = await res.json();
+        if (data?.length > 0) { selectHit(data[0]); return; }
+      }
+    } catch {}
+    setSearching(false);
+    router.push(`/procedure?q=${encodeURIComponent(ex)}`);
   }
 
   const showDropdown = dropdownOpen && hits.length > 0;
