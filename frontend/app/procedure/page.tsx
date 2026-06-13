@@ -105,7 +105,7 @@ const ADJUSTMENT_CATALOG = [
   },
   {
     code: "pediatric_neonate_or_infant",
-    label: "Neonato/lactente — 0 a 24 meses",
+    label: "Neonato/lactante — 0 a 24 meses",
     pct: 50,
     helper: null,
     group: "pediatric" as const,
